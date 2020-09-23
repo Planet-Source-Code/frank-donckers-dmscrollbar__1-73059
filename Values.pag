@@ -1,0 +1,362 @@
+VERSION 5.00
+Begin VB.PropertyPage Values 
+   AutoRedraw      =   -1  'True
+   Caption         =   "Values"
+   ClientHeight    =   7290
+   ClientLeft      =   0
+   ClientTop       =   0
+   ClientWidth     =   15465
+   PaletteMode     =   0  'Halftone
+   ScaleHeight     =   7290
+   ScaleWidth      =   15465
+   Begin VB.Frame Frame3 
+      Caption         =   "Buttons"
+      Height          =   3255
+      Left            =   3720
+      TabIndex        =   12
+      Top             =   3360
+      Width           =   3255
+      Begin VB.TextBox txtButtonsHeightMax 
+         Height          =   330
+         Left            =   360
+         TabIndex        =   20
+         Top             =   720
+         Width           =   2700
+      End
+      Begin VB.TextBox txtButtonsWidthMax 
+         Height          =   330
+         Left            =   360
+         TabIndex        =   19
+         Top             =   1440
+         Width           =   2700
+      End
+      Begin VB.Label lblButtonsHeightMax 
+         BackColor       =   &H00C0C0C0&
+         BackStyle       =   0  'Transparent
+         Caption         =   "ButtonsHeightMax:"
+         Height          =   240
+         Left            =   360
+         TabIndex        =   22
+         Top             =   480
+         Width           =   2700
+      End
+      Begin VB.Label lblButtonsWidthMax 
+         BackColor       =   &H00C0C0C0&
+         BackStyle       =   0  'Transparent
+         Caption         =   "ButtonsWidthMax:"
+         Height          =   240
+         Left            =   360
+         TabIndex        =   21
+         Top             =   1200
+         Width           =   2700
+      End
+   End
+   Begin VB.Frame Frame2 
+      Caption         =   "Scroller"
+      Height          =   3255
+      Left            =   120
+      TabIndex        =   11
+      Top             =   3360
+      Width           =   3375
+      Begin VB.TextBox txtScrollerHeightMax 
+         Height          =   330
+         Left            =   360
+         TabIndex        =   15
+         Top             =   1680
+         Width           =   2700
+      End
+      Begin VB.TextBox txtScrollerWidthMax 
+         Height          =   330
+         Left            =   360
+         TabIndex        =   14
+         Top             =   2640
+         Width           =   2700
+      End
+      Begin VB.TextBox txtScrollInterval 
+         Height          =   330
+         Left            =   360
+         TabIndex        =   13
+         Top             =   720
+         Width           =   2700
+      End
+      Begin VB.Label lblScrollerHeightMax 
+         BackColor       =   &H00C0C0C0&
+         BackStyle       =   0  'Transparent
+         Caption         =   "ScrollerHeightMax:"
+         Height          =   240
+         Left            =   360
+         TabIndex        =   18
+         Top             =   1440
+         Width           =   2700
+      End
+      Begin VB.Label lblScrollerWidthMax 
+         BackColor       =   &H00C0C0C0&
+         BackStyle       =   0  'Transparent
+         Caption         =   "ScrollerWidthMax:"
+         Height          =   240
+         Left            =   360
+         TabIndex        =   17
+         Top             =   2400
+         Width           =   2700
+      End
+      Begin VB.Label lblScrollInterval 
+         BackColor       =   &H00C0C0C0&
+         BackStyle       =   0  'Transparent
+         Caption         =   "ScrollInterval:"
+         Height          =   240
+         Left            =   360
+         TabIndex        =   16
+         Top             =   480
+         Width           =   2700
+      End
+   End
+   Begin VB.Frame Frame1 
+      Caption         =   "Bar"
+      Height          =   2895
+      Left            =   240
+      TabIndex        =   0
+      Top             =   360
+      Width           =   6735
+      Begin VB.TextBox txtValue 
+         Height          =   330
+         Left            =   240
+         TabIndex        =   5
+         Top             =   2280
+         Width           =   2700
+      End
+      Begin VB.TextBox txtSmallChange 
+         Height          =   330
+         Left            =   240
+         TabIndex        =   4
+         Top             =   1440
+         Width           =   2700
+      End
+      Begin VB.TextBox txtLargeChange 
+         Height          =   330
+         Left            =   3720
+         TabIndex        =   3
+         Top             =   1440
+         Width           =   2700
+      End
+      Begin VB.TextBox txtMin 
+         Height          =   330
+         Left            =   270
+         TabIndex        =   2
+         Top             =   600
+         Width           =   2700
+      End
+      Begin VB.TextBox txtMax 
+         Height          =   330
+         Left            =   3720
+         TabIndex        =   1
+         Top             =   600
+         Width           =   2700
+      End
+      Begin VB.Label lblValue 
+         BackColor       =   &H00C0C0C0&
+         BackStyle       =   0  'Transparent
+         Caption         =   "Value:"
+         Height          =   240
+         Left            =   240
+         TabIndex        =   10
+         Top             =   2040
+         Width           =   2700
+      End
+      Begin VB.Label lblSmallChange 
+         BackColor       =   &H00C0C0C0&
+         BackStyle       =   0  'Transparent
+         Caption         =   "SmallChange:"
+         Height          =   240
+         Left            =   240
+         TabIndex        =   9
+         Top             =   1200
+         Width           =   2700
+      End
+      Begin VB.Label lblLargeChange 
+         BackColor       =   &H00C0C0C0&
+         BackStyle       =   0  'Transparent
+         Caption         =   "LargeChange:"
+         Height          =   240
+         Left            =   3720
+         TabIndex        =   8
+         Top             =   1200
+         Width           =   2700
+      End
+      Begin VB.Label lblMin 
+         BackColor       =   &H00C0C0C0&
+         BackStyle       =   0  'Transparent
+         Caption         =   "Min:"
+         Height          =   240
+         Left            =   270
+         TabIndex        =   7
+         Top             =   360
+         Width           =   2700
+      End
+      Begin VB.Label lblMax 
+         BackColor       =   &H00C0C0C0&
+         BackStyle       =   0  'Transparent
+         Caption         =   "Max:"
+         Height          =   240
+         Left            =   3720
+         TabIndex        =   6
+         Top             =   360
+         Width           =   2700
+      End
+   End
+End
+Attribute VB_Name = "Values"
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = False
+Attribute VB_PredeclaredId = False
+Attribute VB_Exposed = False
+
+' Programmer:        Donckers Frank
+'                    DarkManSoft@Gmail.com
+'
+' Description:       Propertypage Pictures for User Control Scrollbar
+
+
+
+'=====================================================
+' Set Maximum width buttons
+'=====================================================
+Private Sub txtButtonsWidthMax_Change()
+    If Val(txtButtonsWidthMax.Text) > 2147483647 Or Val(txtButtonsWidthMax.Text) < 1 Then
+        MsgBox "Invallid input", vbOKOnly + vbExclamation, "Error on ButtonsWidthMax"
+        Exit Sub
+    End If
+    Changed = True
+End Sub
+
+'=====================================================
+' Set Maximum height buttons
+'=====================================================
+Private Sub txtButtonsHeightMax_Change()
+    If Val(txtButtonsHeightMax.Text) > 2147483647 Or Val(txtButtonsHeightMax.Text) < 1 Then
+        MsgBox "Invallid input", vbOKOnly + vbExclamation, "Error on ButtonsHeightMax"
+        Exit Sub
+    End If
+    Changed = True
+End Sub
+
+'=====================================================
+' Set Scrollinterval
+'=====================================================
+Private Sub txtScrollInterval_Change()
+    If Val(txtScrollInterval.Text) < 1 Or Val(txtScrollInterval.Text) > 32767 Then
+        MsgBox "Invallid input", vbOKOnly + vbExclamation, "Error on ScrollInterval"
+        Exit Sub
+    End If
+    Changed = True
+End Sub
+
+'=====================================================
+' Set maximum width scroller
+'=====================================================
+Private Sub txtScrollerWidthMax_Change()
+    If Val(txtScrollerWidthMax.Text) > 2147483647 Or Val(txtScrollerWidthMax.Text) < 1 Then
+        MsgBox "Invallid input", vbOKOnly + vbExclamation, "Error on ScrollerWidthMax"
+        Exit Sub
+    End If
+    Changed = True
+End Sub
+
+'=====================================================
+' Set maximum height scroller
+'=====================================================
+Private Sub txtScrollerHeightMax_Change()
+    If Val(txtScrollerHeightMax.Text) > 2147483647 Or Val(txtScrollerHeightMax.Text) < 1 Then
+        MsgBox "Invallid input", vbOKOnly + vbExclamation, "Error on ScrollerHeightMax"
+        Exit Sub
+    End If
+    Changed = True
+End Sub
+
+'=====================================================
+' Set maximum value
+'=====================================================
+Private Sub txtMax_Change()
+    If Val(txtMax.Text) > 2147483647 Or Val(txtMax.Text) < -2147483647 Then
+        MsgBox "Invallid input", vbOKOnly + vbExclamation, "Error on Maxvalue"
+        Exit Sub
+    End If
+    Changed = True
+End Sub
+
+'=====================================================
+' Set minimum value
+'=====================================================
+Private Sub txtMin_Change()
+    If Val(txtMin.Text) > 2147483647 Or Val(txtMin.Text) < -2147483647 Then
+        MsgBox "Invallid input", vbOKOnly + vbExclamation, "Error on Minvalue"
+        Exit Sub
+    End If
+    Changed = True
+End Sub
+
+'=====================================================
+' Set largechange
+'=====================================================
+Private Sub txtLargeChange_Change()
+    If Val(txtLargeChange.Text) < 1 Or Val(txtLargeChange.Text) > 32767 Then
+        MsgBox "Invallid input", vbOKOnly + vbExclamation, "Error on LargeChange"
+        Exit Sub
+    End If
+    Changed = True
+End Sub
+
+'=====================================================
+' Set smallchange
+'=====================================================
+Private Sub txtSmallChange_Change()
+    If Val(txtSmallChange.Text) < 1 Or Val(txtSmallChange.Text) > 32767 Then
+        MsgBox "Invallid input", vbOKOnly + vbExclamation, "Error on SmallChange"
+        Exit Sub
+    End If
+    Changed = True
+End Sub
+
+'=====================================================
+' Set value
+'=====================================================
+Private Sub txtValue_Change()
+    If Val(txtValue.Text) > 2147483647 Or Val(txtValue.Text) < -2147483647 Or Val(txtValue.Text) > Val(txtMax.Text) Or Val(txtValue.Text) < Val(txtMin.Text) Then
+        MsgBox "Invallid input", vbOKOnly + vbExclamation, "Error on Value"
+        Exit Sub
+    End If
+    Changed = True
+End Sub
+
+'=====================================================
+' Apply the changes to the usercontrol
+'=====================================================
+Private Sub PropertyPage_ApplyChanges()
+    SelectedControls(0).ButtonsWidthMax = txtButtonsWidthMax.Text
+    SelectedControls(0).ButtonsHeightMax = txtButtonsHeightMax.Text
+    SelectedControls(0).ScrollInterval = txtScrollInterval.Text
+    SelectedControls(0).ScrollerWidthMax = txtScrollerWidthMax.Text
+    SelectedControls(0).ScrollerHeightMax = txtScrollerHeightMax.Text
+    SelectedControls(0).MaxValue = txtMax.Text
+    SelectedControls(0).MinValue = txtMin.Text
+    SelectedControls(0).LargeChange = txtLargeChange.Text
+    SelectedControls(0).SmallChange = txtSmallChange.Text
+    SelectedControls(0).Value = txtValue.Text
+End Sub
+
+'================================================================
+' Set values to the properties of the usercontrol
+'================================================================
+Private Sub PropertyPage_SelectionChanged()
+    txtButtonsWidthMax.Text = SelectedControls(0).ButtonsWidthMax
+    txtButtonsHeightMax.Text = SelectedControls(0).ButtonsHeightMax
+    txtScrollInterval.Text = SelectedControls(0).ScrollInterval
+    txtScrollerWidthMax.Text = SelectedControls(0).ScrollerWidthMax
+    txtScrollerHeightMax.Text = SelectedControls(0).ScrollerHeightMax
+    txtMax.Text = SelectedControls(0).MaxValue
+    txtMin.Text = SelectedControls(0).MinValue
+    txtLargeChange.Text = SelectedControls(0).LargeChange
+    txtSmallChange.Text = SelectedControls(0).SmallChange
+    txtValue.Text = SelectedControls(0).Value
+End Sub
+
+

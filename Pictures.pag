@@ -1,0 +1,1580 @@
+VERSION 5.00
+Begin VB.PropertyPage Pictures 
+   AutoRedraw      =   -1  'True
+   Caption         =   "Pictures"
+   ClientHeight    =   7290
+   ClientLeft      =   0
+   ClientTop       =   0
+   ClientWidth     =   15465
+   PaletteMode     =   0  'Halftone
+   ScaleHeight     =   7290
+   ScaleWidth      =   15465
+   Begin VB.Frame fraSelectPicure 
+      Caption         =   "Select picture"
+      Height          =   6495
+      Left            =   240
+      TabIndex        =   42
+      Top             =   5040
+      Visible         =   0   'False
+      Width           =   12375
+      Begin VB.TextBox txtFilename 
+         Height          =   375
+         Left            =   1080
+         TabIndex        =   83
+         Top             =   5760
+         Width           =   10215
+      End
+      Begin VB.PictureBox picPreview 
+         Height          =   975
+         Left            =   8760
+         ScaleHeight     =   915
+         ScaleWidth      =   795
+         TabIndex        =   82
+         Top             =   360
+         Width           =   855
+      End
+      Begin VB.Frame Frame3 
+         Caption         =   "Filter"
+         Height          =   1335
+         Left            =   4320
+         TabIndex        =   48
+         Top             =   4080
+         Width           =   4335
+         Begin VB.CheckBox chkFilter 
+            Caption         =   "*.bmp"
+            Height          =   255
+            Index           =   0
+            Left            =   120
+            TabIndex        =   54
+            Top             =   240
+            Width           =   855
+         End
+         Begin VB.CheckBox chkFilter 
+            Caption         =   "*.jpg;*.jpeg"
+            Height          =   255
+            Index           =   1
+            Left            =   1200
+            TabIndex        =   53
+            Top             =   240
+            Width           =   1095
+         End
+         Begin VB.CheckBox chkFilter 
+            Caption         =   "*.gif"
+            Height          =   255
+            Index           =   2
+            Left            =   120
+            TabIndex        =   52
+            Top             =   600
+            Width           =   855
+         End
+         Begin VB.CheckBox chkFilter 
+            Caption         =   "*.tif;*.tiff"
+            Height          =   255
+            Index           =   3
+            Left            =   1200
+            TabIndex        =   51
+            Top             =   600
+            Width           =   1095
+         End
+         Begin VB.CheckBox chkFilter 
+            Caption         =   "*.png"
+            Height          =   255
+            Index           =   4
+            Left            =   120
+            TabIndex        =   50
+            Top             =   960
+            Width           =   855
+         End
+         Begin VB.CommandButton Command1 
+            Caption         =   "Select all"
+            Height          =   375
+            Left            =   3000
+            TabIndex        =   49
+            Top             =   480
+            Width           =   1095
+         End
+      End
+      Begin VB.CommandButton cmdCancel 
+         Caption         =   "Cancel"
+         Height          =   375
+         Left            =   9000
+         TabIndex        =   47
+         Top             =   5040
+         Width           =   975
+      End
+      Begin VB.CommandButton cmdOk 
+         Caption         =   "Ok"
+         Height          =   375
+         Left            =   10200
+         TabIndex        =   46
+         Top             =   5040
+         Width           =   975
+      End
+      Begin VB.FileListBox File1 
+         Height          =   3600
+         Left            =   4320
+         TabIndex        =   45
+         Top             =   360
+         Width           =   4335
+      End
+      Begin VB.DirListBox Dir1 
+         Height          =   4365
+         Left            =   240
+         TabIndex        =   44
+         Top             =   720
+         Width           =   3855
+      End
+      Begin VB.DriveListBox Drive1 
+         Height          =   315
+         Left            =   240
+         TabIndex        =   43
+         Top             =   360
+         Width           =   3855
+      End
+      Begin VB.Label Label2 
+         AutoSize        =   -1  'True
+         Caption         =   "Filename:"
+         Height          =   195
+         Left            =   240
+         TabIndex        =   84
+         Top             =   5760
+         Width           =   675
+      End
+   End
+   Begin VB.Frame fraPrev 
+      Caption         =   "Preview Enabled"
+      Height          =   2895
+      Left            =   12720
+      TabIndex        =   34
+      Top             =   240
+      Width           =   2175
+      Begin prjScrollBar.DMGraphicalScrollBar Preview3 
+         Height          =   255
+         Index           =   0
+         Left            =   120
+         TabIndex        =   38
+         Top             =   360
+         Width           =   1935
+         _ExtentX        =   3413
+         _ExtentY        =   450
+         PicBackVertical =   "Pictures.pgx":0000
+         PicBackVerticalDiasabled=   "Pictures.pgx":9202
+         PicBackHorizontal=   "Pictures.pgx":12404
+         PicBackHorizontalDisabled=   "Pictures.pgx":1ACFA
+         PicButtonTop_UP =   "Pictures.pgx":235F0
+         PicButtonTop_DOWN=   "Pictures.pgx":23912
+         PicButtonTop_DISABLED=   "Pictures.pgx":23C34
+         PicButtonTop_HOOVER=   "Pictures.pgx":23F56
+         PicButtonBottom_UP=   "Pictures.pgx":24278
+         PicButtonBottom_DOWN=   "Pictures.pgx":2459A
+         m_PicButtonBottom_DISABLED=   "Pictures.pgx":248BC
+         PicButtonBottom_HOOVER=   "Pictures.pgx":24BDE
+         PicButtonLeft_UP=   "Pictures.pgx":24F00
+         PicButtonLeft_DOWN=   "Pictures.pgx":25222
+         PicButtonLeft_DISABLED=   "Pictures.pgx":25544
+         PicButtonLeft_HOOVER=   "Pictures.pgx":25866
+         PicButtonRight_UP=   "Pictures.pgx":25B88
+         PicButtonRight_DOWN=   "Pictures.pgx":25EAA
+         PicButtonRight_DISABLED=   "Pictures.pgx":261CC
+         PicButtonRight_HOOVER=   "Pictures.pgx":264EE
+         PicScrollerVertical_DOWN=   "Pictures.pgx":26810
+         PicScrollerVertical_UP=   "Pictures.pgx":26E32
+         PicScrollerVertical_DISABLED=   "Pictures.pgx":27454
+         PicScrollerVertical_HOOVER=   "Pictures.pgx":27A76
+         PicScrollerHorizontal_UP=   "Pictures.pgx":28098
+         PicScrollerHorizontal_DOWN=   "Pictures.pgx":2868A
+         PicScrollerHorizontal_DISABLED=   "Pictures.pgx":28C7C
+         PicScrollerHorizontal_HOOVER=   "Pictures.pgx":2926E
+         DisabledBorderColor=   49344
+         Style           =   2
+      End
+      Begin prjScrollBar.DMGraphicalScrollBar Preview3 
+         Height          =   2055
+         Index           =   1
+         Left            =   960
+         TabIndex        =   39
+         Top             =   720
+         Width           =   255
+         _ExtentX        =   450
+         _ExtentY        =   3625
+         PicBackVertical =   "Pictures.pgx":29860
+         PicBackVerticalDiasabled=   "Pictures.pgx":32A62
+         PicBackHorizontal=   "Pictures.pgx":3BC64
+         PicBackHorizontalDisabled=   "Pictures.pgx":4455A
+         PicButtonTop_UP =   "Pictures.pgx":4CE50
+         PicButtonTop_DOWN=   "Pictures.pgx":4D172
+         PicButtonTop_DISABLED=   "Pictures.pgx":4D494
+         PicButtonTop_HOOVER=   "Pictures.pgx":4D7B6
+         PicButtonBottom_UP=   "Pictures.pgx":4DAD8
+         PicButtonBottom_DOWN=   "Pictures.pgx":4DDFA
+         m_PicButtonBottom_DISABLED=   "Pictures.pgx":4E11C
+         PicButtonBottom_HOOVER=   "Pictures.pgx":4E43E
+         PicButtonLeft_UP=   "Pictures.pgx":4E760
+         PicButtonLeft_DOWN=   "Pictures.pgx":4EA82
+         PicButtonLeft_DISABLED=   "Pictures.pgx":4EDA4
+         PicButtonLeft_HOOVER=   "Pictures.pgx":4F0C6
+         PicButtonRight_UP=   "Pictures.pgx":4F3E8
+         PicButtonRight_DOWN=   "Pictures.pgx":4F70A
+         PicButtonRight_DISABLED=   "Pictures.pgx":4FA2C
+         PicButtonRight_HOOVER=   "Pictures.pgx":4FD4E
+         PicScrollerVertical_DOWN=   "Pictures.pgx":50070
+         PicScrollerVertical_UP=   "Pictures.pgx":50692
+         PicScrollerVertical_DISABLED=   "Pictures.pgx":50CB4
+         PicScrollerVertical_HOOVER=   "Pictures.pgx":512D6
+         PicScrollerHorizontal_UP=   "Pictures.pgx":518F8
+         PicScrollerHorizontal_DOWN=   "Pictures.pgx":51EEA
+         PicScrollerHorizontal_DISABLED=   "Pictures.pgx":524DC
+         PicScrollerHorizontal_HOOVER=   "Pictures.pgx":52ACE
+         DisabledBorderColor=   49344
+         Style           =   2
+         Orientation     =   1
+      End
+   End
+   Begin VB.Frame Frame7 
+      Caption         =   "Preview Disabled"
+      Height          =   2895
+      Left            =   12720
+      TabIndex        =   33
+      Top             =   3600
+      Width           =   2175
+      Begin prjScrollBar.DMGraphicalScrollBar Preview3 
+         Height          =   255
+         Index           =   2
+         Left            =   120
+         TabIndex        =   40
+         Top             =   360
+         Width           =   1935
+         _ExtentX        =   3413
+         _ExtentY        =   450
+         PicBackVertical =   "Pictures.pgx":530C0
+         PicBackVerticalDiasabled=   "Pictures.pgx":5C2C2
+         PicBackHorizontal=   "Pictures.pgx":654C4
+         PicBackHorizontalDisabled=   "Pictures.pgx":6DDBA
+         PicButtonTop_UP =   "Pictures.pgx":766B0
+         PicButtonTop_DOWN=   "Pictures.pgx":769D2
+         PicButtonTop_DISABLED=   "Pictures.pgx":76CF4
+         PicButtonTop_HOOVER=   "Pictures.pgx":77016
+         PicButtonBottom_UP=   "Pictures.pgx":77338
+         PicButtonBottom_DOWN=   "Pictures.pgx":7765A
+         m_PicButtonBottom_DISABLED=   "Pictures.pgx":7797C
+         PicButtonBottom_HOOVER=   "Pictures.pgx":77C9E
+         PicButtonLeft_UP=   "Pictures.pgx":77FC0
+         PicButtonLeft_DOWN=   "Pictures.pgx":782E2
+         PicButtonLeft_DISABLED=   "Pictures.pgx":78604
+         PicButtonLeft_HOOVER=   "Pictures.pgx":78926
+         PicButtonRight_UP=   "Pictures.pgx":78C48
+         PicButtonRight_DOWN=   "Pictures.pgx":78F6A
+         PicButtonRight_DISABLED=   "Pictures.pgx":7928C
+         PicButtonRight_HOOVER=   "Pictures.pgx":795AE
+         PicScrollerVertical_DOWN=   "Pictures.pgx":798D0
+         PicScrollerVertical_UP=   "Pictures.pgx":79EF2
+         PicScrollerVertical_DISABLED=   "Pictures.pgx":7A514
+         PicScrollerVertical_HOOVER=   "Pictures.pgx":7AB36
+         PicScrollerHorizontal_UP=   "Pictures.pgx":7B158
+         PicScrollerHorizontal_DOWN=   "Pictures.pgx":7B74A
+         PicScrollerHorizontal_DISABLED=   "Pictures.pgx":7BD3C
+         PicScrollerHorizontal_HOOVER=   "Pictures.pgx":7C32E
+         DisabledBorderColor=   49344
+         Style           =   2
+         Enabled         =   0   'False
+      End
+      Begin prjScrollBar.DMGraphicalScrollBar Preview3 
+         Height          =   2055
+         Index           =   3
+         Left            =   960
+         TabIndex        =   41
+         Top             =   720
+         Width           =   255
+         _ExtentX        =   450
+         _ExtentY        =   3625
+         PicBackVertical =   "Pictures.pgx":7C920
+         PicBackVerticalDiasabled=   "Pictures.pgx":85B22
+         PicBackHorizontal=   "Pictures.pgx":8ED24
+         PicBackHorizontalDisabled=   "Pictures.pgx":9761A
+         PicButtonTop_UP =   "Pictures.pgx":9FF10
+         PicButtonTop_DOWN=   "Pictures.pgx":A0232
+         PicButtonTop_DISABLED=   "Pictures.pgx":A0554
+         PicButtonTop_HOOVER=   "Pictures.pgx":A0876
+         PicButtonBottom_UP=   "Pictures.pgx":A0B98
+         PicButtonBottom_DOWN=   "Pictures.pgx":A0EBA
+         m_PicButtonBottom_DISABLED=   "Pictures.pgx":A11DC
+         PicButtonBottom_HOOVER=   "Pictures.pgx":A14FE
+         PicButtonLeft_UP=   "Pictures.pgx":A1820
+         PicButtonLeft_DOWN=   "Pictures.pgx":A1B42
+         PicButtonLeft_DISABLED=   "Pictures.pgx":A1E64
+         PicButtonLeft_HOOVER=   "Pictures.pgx":A2186
+         PicButtonRight_UP=   "Pictures.pgx":A24A8
+         PicButtonRight_DOWN=   "Pictures.pgx":A27CA
+         PicButtonRight_DISABLED=   "Pictures.pgx":A2AEC
+         PicButtonRight_HOOVER=   "Pictures.pgx":A2E0E
+         PicScrollerVertical_DOWN=   "Pictures.pgx":A3130
+         PicScrollerVertical_UP=   "Pictures.pgx":A3752
+         PicScrollerVertical_DISABLED=   "Pictures.pgx":A3D74
+         PicScrollerVertical_HOOVER=   "Pictures.pgx":A4396
+         PicScrollerHorizontal_UP=   "Pictures.pgx":A49B8
+         PicScrollerHorizontal_DOWN=   "Pictures.pgx":A4FAA
+         PicScrollerHorizontal_DISABLED=   "Pictures.pgx":A559C
+         PicScrollerHorizontal_HOOVER=   "Pictures.pgx":A5B8E
+         DisabledBorderColor=   49344
+         Style           =   2
+         Orientation     =   1
+         Enabled         =   0   'False
+      End
+   End
+   Begin VB.Frame Frame1 
+      Caption         =   "Pictures"
+      Height          =   6255
+      Left            =   240
+      TabIndex        =   0
+      Top             =   240
+      Width           =   12255
+      Begin VB.CommandButton cmdTop 
+         Caption         =   "Up"
+         Height          =   255
+         Index           =   0
+         Left            =   960
+         TabIndex        =   85
+         Top             =   240
+         Width           =   495
+      End
+      Begin VB.CommandButton cmdBack 
+         Caption         =   "Disabled"
+         Height          =   255
+         Index           =   3
+         Left            =   4800
+         TabIndex        =   81
+         Top             =   5040
+         Width           =   735
+      End
+      Begin VB.CommandButton cmdBack 
+         Caption         =   "Disabled"
+         Height          =   255
+         Index           =   2
+         Left            =   3200
+         TabIndex        =   80
+         Top             =   3480
+         Width           =   735
+      End
+      Begin VB.CommandButton cmdBack 
+         Caption         =   "Normal"
+         Height          =   255
+         Index           =   1
+         Left            =   4800
+         TabIndex        =   79
+         Top             =   3480
+         Width           =   735
+      End
+      Begin VB.CommandButton cmdScrollHor 
+         Caption         =   "Hoover"
+         Height          =   255
+         Index           =   3
+         Left            =   10320
+         TabIndex        =   78
+         Top             =   2280
+         Width           =   735
+      End
+      Begin VB.CommandButton cmdRight 
+         Caption         =   "Hoover"
+         Height          =   255
+         Index           =   3
+         Left            =   10320
+         TabIndex        =   77
+         Top             =   1200
+         Width           =   735
+      End
+      Begin VB.CommandButton cmdBottom 
+         Caption         =   "Hoover"
+         Height          =   255
+         Index           =   3
+         Left            =   10320
+         TabIndex        =   76
+         Top             =   120
+         Width           =   735
+      End
+      Begin VB.CommandButton cmdScrollHor 
+         Caption         =   "Disabled"
+         Height          =   255
+         Index           =   2
+         Left            =   9060
+         TabIndex        =   75
+         Top             =   2280
+         Width           =   855
+      End
+      Begin VB.CommandButton cmdRight 
+         Caption         =   "Disabled"
+         Height          =   255
+         Index           =   2
+         Left            =   9060
+         TabIndex        =   74
+         Top             =   1200
+         Width           =   855
+      End
+      Begin VB.CommandButton cmdBottom 
+         Caption         =   "Disabled"
+         Height          =   255
+         Index           =   2
+         Left            =   9060
+         TabIndex        =   73
+         Top             =   120
+         Width           =   855
+      End
+      Begin VB.CommandButton cmdScrollHor 
+         Caption         =   "Down"
+         Height          =   255
+         Index           =   1
+         Left            =   8000
+         TabIndex        =   72
+         Top             =   2280
+         Width           =   615
+      End
+      Begin VB.CommandButton cmdRight 
+         Caption         =   "Down"
+         Height          =   255
+         Index           =   1
+         Left            =   8000
+         TabIndex        =   71
+         Top             =   1200
+         Width           =   615
+      End
+      Begin VB.CommandButton cmdBottom 
+         Caption         =   "Down"
+         Height          =   255
+         Index           =   1
+         Left            =   8000
+         TabIndex        =   70
+         Top             =   120
+         Width           =   615
+      End
+      Begin VB.CommandButton cmdScrollV 
+         Caption         =   "Hoover"
+         Height          =   255
+         Index           =   3
+         Left            =   4440
+         TabIndex        =   69
+         Top             =   2400
+         Width           =   735
+      End
+      Begin VB.CommandButton cmdLeft 
+         Caption         =   "Hoover"
+         Height          =   255
+         Index           =   3
+         Left            =   4440
+         TabIndex        =   68
+         Top             =   1320
+         Width           =   735
+      End
+      Begin VB.CommandButton cmdScrollV 
+         Caption         =   "Disabled"
+         Height          =   255
+         Index           =   2
+         Left            =   3200
+         TabIndex        =   67
+         Top             =   2400
+         Width           =   855
+      End
+      Begin VB.CommandButton cmdLeft 
+         Caption         =   "Disabled"
+         Height          =   255
+         Index           =   2
+         Left            =   3200
+         TabIndex        =   66
+         Top             =   1320
+         Width           =   855
+      End
+      Begin VB.CommandButton cmdScrollV 
+         Caption         =   "Down"
+         Height          =   255
+         Index           =   1
+         Left            =   2100
+         TabIndex        =   65
+         Top             =   2400
+         Width           =   615
+      End
+      Begin VB.CommandButton cmdLeft 
+         Caption         =   "Down"
+         Height          =   255
+         Index           =   1
+         Left            =   2100
+         TabIndex        =   64
+         Top             =   1320
+         Width           =   615
+      End
+      Begin VB.CommandButton cmdTop 
+         Caption         =   "Hoover"
+         Height          =   255
+         Index           =   3
+         Left            =   4440
+         TabIndex        =   63
+         Top             =   240
+         Width           =   735
+      End
+      Begin VB.CommandButton cmdTop 
+         Caption         =   "Disabled"
+         Height          =   255
+         Index           =   2
+         Left            =   3200
+         TabIndex        =   62
+         Top             =   240
+         Width           =   855
+      End
+      Begin VB.CommandButton cmdTop 
+         Caption         =   "Down"
+         Height          =   255
+         Index           =   1
+         Left            =   2100
+         TabIndex        =   61
+         Top             =   240
+         Width           =   615
+      End
+      Begin VB.CommandButton cmdBack 
+         Caption         =   "Normal"
+         Height          =   255
+         Index           =   0
+         Left            =   1745
+         TabIndex        =   60
+         Top             =   3480
+         Width           =   615
+      End
+      Begin VB.CommandButton cmdScrollHor 
+         Caption         =   "Up"
+         Height          =   255
+         Index           =   0
+         Left            =   6840
+         TabIndex        =   59
+         Top             =   2280
+         Width           =   495
+      End
+      Begin VB.CommandButton cmdRight 
+         Caption         =   "Up"
+         Height          =   255
+         Index           =   0
+         Left            =   6840
+         TabIndex        =   58
+         Top             =   1200
+         Width           =   495
+      End
+      Begin VB.CommandButton cmdBottom 
+         Caption         =   "Up"
+         Height          =   255
+         Index           =   0
+         Left            =   6840
+         TabIndex        =   57
+         Top             =   120
+         Width           =   495
+      End
+      Begin VB.CommandButton cmdScrollV 
+         Caption         =   "Up"
+         Height          =   255
+         Index           =   0
+         Left            =   960
+         TabIndex        =   56
+         Top             =   2400
+         Width           =   495
+      End
+      Begin VB.CommandButton cmdLeft 
+         Caption         =   "Up"
+         Height          =   255
+         Index           =   0
+         Left            =   960
+         TabIndex        =   55
+         Top             =   1320
+         Width           =   495
+      End
+      Begin VB.PictureBox Back 
+         AutoRedraw      =   -1  'True
+         BackColor       =   &H00E0E0E0&
+         BorderStyle     =   0  'None
+         Height          =   495
+         Index           =   3
+         Left            =   4800
+         ScaleHeight     =   495
+         ScaleWidth      =   1575
+         TabIndex        =   37
+         Top             =   5280
+         Width           =   1575
+      End
+      Begin VB.PictureBox Back 
+         AutoRedraw      =   -1  'True
+         BackColor       =   &H00E0E0E0&
+         BorderStyle     =   0  'None
+         Height          =   2055
+         Index           =   2
+         Left            =   3360
+         ScaleHeight     =   2055
+         ScaleWidth      =   495
+         TabIndex        =   36
+         Top             =   3720
+         Width           =   495
+      End
+      Begin VB.PictureBox Back 
+         AutoRedraw      =   -1  'True
+         BackColor       =   &H00E0E0E0&
+         BorderStyle     =   0  'None
+         Height          =   495
+         Index           =   1
+         Left            =   4800
+         ScaleHeight     =   495
+         ScaleWidth      =   1575
+         TabIndex        =   35
+         Top             =   3720
+         Width           =   1575
+      End
+      Begin VB.PictureBox scrlHor 
+         AutoRedraw      =   -1  'True
+         AutoSize        =   -1  'True
+         BackColor       =   &H00E0E0E0&
+         BorderStyle     =   0  'None
+         Height          =   495
+         Index           =   3
+         Left            =   10440
+         ScaleHeight     =   495
+         ScaleWidth      =   495
+         TabIndex        =   32
+         Top             =   2520
+         Width           =   495
+      End
+      Begin VB.PictureBox ScrlVert 
+         AutoRedraw      =   -1  'True
+         AutoSize        =   -1  'True
+         BackColor       =   &H00E0E0E0&
+         BorderStyle     =   0  'None
+         Height          =   495
+         Index           =   3
+         Left            =   4560
+         ScaleHeight     =   495
+         ScaleWidth      =   495
+         TabIndex        =   31
+         Top             =   2640
+         Width           =   495
+      End
+      Begin VB.PictureBox btnRight 
+         AutoRedraw      =   -1  'True
+         AutoSize        =   -1  'True
+         BackColor       =   &H00E0E0E0&
+         BorderStyle     =   0  'None
+         Height          =   495
+         Index           =   3
+         Left            =   10440
+         ScaleHeight     =   495
+         ScaleWidth      =   495
+         TabIndex        =   30
+         Top             =   1440
+         Width           =   495
+      End
+      Begin VB.PictureBox btnLeft 
+         AutoRedraw      =   -1  'True
+         AutoSize        =   -1  'True
+         BackColor       =   &H00E0E0E0&
+         BorderStyle     =   0  'None
+         Height          =   495
+         Index           =   3
+         Left            =   4560
+         ScaleHeight     =   495
+         ScaleWidth      =   495
+         TabIndex        =   29
+         Top             =   1560
+         Width           =   495
+      End
+      Begin VB.PictureBox BtnBottom 
+         AutoRedraw      =   -1  'True
+         AutoSize        =   -1  'True
+         BackColor       =   &H00FFFFFF&
+         BorderStyle     =   0  'None
+         Height          =   495
+         Index           =   3
+         Left            =   10440
+         ScaleHeight     =   495
+         ScaleWidth      =   495
+         TabIndex        =   28
+         Top             =   360
+         Width           =   495
+      End
+      Begin VB.PictureBox btnTop 
+         AutoRedraw      =   -1  'True
+         AutoSize        =   -1  'True
+         BackColor       =   &H00E0E0E0&
+         BorderStyle     =   0  'None
+         Height          =   495
+         Index           =   3
+         Left            =   4560
+         ScaleHeight     =   495
+         ScaleWidth      =   495
+         TabIndex        =   27
+         Top             =   480
+         Width           =   495
+      End
+      Begin VB.PictureBox scrlHor 
+         AutoRedraw      =   -1  'True
+         AutoSize        =   -1  'True
+         BackColor       =   &H00E0E0E0&
+         BorderStyle     =   0  'None
+         Height          =   495
+         Index           =   2
+         Left            =   9240
+         ScaleHeight     =   495
+         ScaleWidth      =   495
+         TabIndex        =   26
+         Top             =   2520
+         Width           =   495
+      End
+      Begin VB.PictureBox ScrlVert 
+         AutoRedraw      =   -1  'True
+         AutoSize        =   -1  'True
+         BackColor       =   &H00E0E0E0&
+         BorderStyle     =   0  'None
+         Height          =   495
+         Index           =   2
+         Left            =   3360
+         ScaleHeight     =   495
+         ScaleWidth      =   495
+         TabIndex        =   25
+         Top             =   2640
+         Width           =   495
+      End
+      Begin VB.PictureBox btnRight 
+         AutoRedraw      =   -1  'True
+         AutoSize        =   -1  'True
+         BackColor       =   &H00E0E0E0&
+         BorderStyle     =   0  'None
+         Height          =   495
+         Index           =   2
+         Left            =   9240
+         ScaleHeight     =   495
+         ScaleWidth      =   495
+         TabIndex        =   24
+         Top             =   1440
+         Width           =   495
+      End
+      Begin VB.PictureBox btnLeft 
+         AutoRedraw      =   -1  'True
+         AutoSize        =   -1  'True
+         BackColor       =   &H00E0E0E0&
+         BorderStyle     =   0  'None
+         Height          =   495
+         Index           =   2
+         Left            =   3360
+         ScaleHeight     =   495
+         ScaleWidth      =   495
+         TabIndex        =   23
+         Top             =   1560
+         Width           =   495
+      End
+      Begin VB.PictureBox BtnBottom 
+         AutoRedraw      =   -1  'True
+         AutoSize        =   -1  'True
+         BackColor       =   &H00E0E0E0&
+         BorderStyle     =   0  'None
+         Height          =   495
+         Index           =   2
+         Left            =   9240
+         ScaleHeight     =   495
+         ScaleWidth      =   495
+         TabIndex        =   22
+         Top             =   360
+         Width           =   495
+      End
+      Begin VB.PictureBox btnTop 
+         AutoRedraw      =   -1  'True
+         AutoSize        =   -1  'True
+         BackColor       =   &H00E0E0E0&
+         BorderStyle     =   0  'None
+         Height          =   495
+         Index           =   2
+         Left            =   3360
+         ScaleHeight     =   495
+         ScaleWidth      =   495
+         TabIndex        =   21
+         Top             =   480
+         Width           =   495
+      End
+      Begin VB.PictureBox scrlHor 
+         AutoRedraw      =   -1  'True
+         AutoSize        =   -1  'True
+         BackColor       =   &H00E0E0E0&
+         BorderStyle     =   0  'None
+         Height          =   495
+         Index           =   1
+         Left            =   8040
+         ScaleHeight     =   495
+         ScaleWidth      =   495
+         TabIndex        =   20
+         Top             =   2520
+         Width           =   495
+      End
+      Begin VB.PictureBox ScrlVert 
+         AutoRedraw      =   -1  'True
+         AutoSize        =   -1  'True
+         BackColor       =   &H00E0E0E0&
+         BorderStyle     =   0  'None
+         Height          =   495
+         Index           =   1
+         Left            =   2160
+         ScaleHeight     =   495
+         ScaleWidth      =   495
+         TabIndex        =   19
+         Top             =   2640
+         Width           =   495
+      End
+      Begin VB.PictureBox btnRight 
+         AutoRedraw      =   -1  'True
+         AutoSize        =   -1  'True
+         BackColor       =   &H00E0E0E0&
+         BorderStyle     =   0  'None
+         Height          =   495
+         Index           =   1
+         Left            =   8040
+         ScaleHeight     =   495
+         ScaleWidth      =   495
+         TabIndex        =   18
+         Top             =   1440
+         Width           =   495
+      End
+      Begin VB.PictureBox btnLeft 
+         AutoRedraw      =   -1  'True
+         AutoSize        =   -1  'True
+         BackColor       =   &H00E0E0E0&
+         BorderStyle     =   0  'None
+         Height          =   495
+         Index           =   1
+         Left            =   2160
+         ScaleHeight     =   495
+         ScaleWidth      =   495
+         TabIndex        =   17
+         Top             =   1560
+         Width           =   495
+      End
+      Begin VB.PictureBox BtnBottom 
+         AutoRedraw      =   -1  'True
+         AutoSize        =   -1  'True
+         BackColor       =   &H00E0E0E0&
+         BorderStyle     =   0  'None
+         Height          =   495
+         Index           =   1
+         Left            =   8040
+         ScaleHeight     =   495
+         ScaleWidth      =   495
+         TabIndex        =   16
+         Top             =   360
+         Width           =   495
+      End
+      Begin VB.PictureBox btnTop 
+         AutoRedraw      =   -1  'True
+         AutoSize        =   -1  'True
+         BackColor       =   &H00E0E0E0&
+         BorderStyle     =   0  'None
+         Height          =   495
+         Index           =   1
+         Left            =   2160
+         ScaleHeight     =   495
+         ScaleWidth      =   495
+         TabIndex        =   15
+         Top             =   480
+         Width           =   495
+      End
+      Begin VB.PictureBox Back 
+         AutoRedraw      =   -1  'True
+         BackColor       =   &H00E0E0E0&
+         BorderStyle     =   0  'None
+         Height          =   2055
+         Index           =   0
+         Left            =   1800
+         ScaleHeight     =   2055
+         ScaleWidth      =   495
+         TabIndex        =   14
+         Top             =   3720
+         Width           =   495
+      End
+      Begin VB.PictureBox scrlHor 
+         AutoRedraw      =   -1  'True
+         AutoSize        =   -1  'True
+         BackColor       =   &H00E0E0E0&
+         BorderStyle     =   0  'None
+         Height          =   495
+         Index           =   0
+         Left            =   6840
+         ScaleHeight     =   495
+         ScaleWidth      =   495
+         TabIndex        =   12
+         Top             =   2520
+         Width           =   495
+      End
+      Begin VB.PictureBox ScrlVert 
+         AutoRedraw      =   -1  'True
+         AutoSize        =   -1  'True
+         BackColor       =   &H00E0E0E0&
+         BorderStyle     =   0  'None
+         Height          =   495
+         Index           =   0
+         Left            =   960
+         ScaleHeight     =   495
+         ScaleWidth      =   495
+         TabIndex        =   11
+         Top             =   2640
+         Width           =   495
+      End
+      Begin VB.PictureBox btnRight 
+         AutoRedraw      =   -1  'True
+         AutoSize        =   -1  'True
+         BackColor       =   &H00E0E0E0&
+         BorderStyle     =   0  'None
+         Height          =   495
+         Index           =   0
+         Left            =   6840
+         ScaleHeight     =   495
+         ScaleWidth      =   495
+         TabIndex        =   10
+         Top             =   1440
+         Width           =   495
+      End
+      Begin VB.PictureBox btnLeft 
+         AutoRedraw      =   -1  'True
+         AutoSize        =   -1  'True
+         BackColor       =   &H00E0E0E0&
+         BorderStyle     =   0  'None
+         Height          =   495
+         Index           =   0
+         Left            =   960
+         ScaleHeight     =   495
+         ScaleWidth      =   495
+         TabIndex        =   9
+         Top             =   1560
+         Width           =   495
+      End
+      Begin VB.PictureBox BtnBottom 
+         AutoRedraw      =   -1  'True
+         AutoSize        =   -1  'True
+         BackColor       =   &H00E0E0E0&
+         BorderStyle     =   0  'None
+         Height          =   495
+         Index           =   0
+         Left            =   6840
+         ScaleHeight     =   495
+         ScaleWidth      =   495
+         TabIndex        =   8
+         Top             =   360
+         Width           =   495
+      End
+      Begin VB.PictureBox btnTop 
+         AutoRedraw      =   -1  'True
+         AutoSize        =   -1  'True
+         BackColor       =   &H00E0E0E0&
+         BorderStyle     =   0  'None
+         Height          =   495
+         Index           =   0
+         Left            =   960
+         ScaleHeight     =   495
+         ScaleWidth      =   495
+         TabIndex        =   7
+         Top             =   480
+         Width           =   495
+      End
+      Begin VB.Label Label1 
+         AutoSize        =   -1  'True
+         BackStyle       =   0  'Transparent
+         Caption         =   "Background"
+         ForeColor       =   &H00008000&
+         Height          =   195
+         Index           =   7
+         Left            =   240
+         TabIndex        =   13
+         Top             =   4320
+         Width           =   870
+      End
+      Begin VB.Label Label1 
+         BackStyle       =   0  'Transparent
+         Caption         =   "Scroller vertical"
+         ForeColor       =   &H00008000&
+         Height          =   555
+         Index           =   5
+         Left            =   120
+         TabIndex        =   6
+         Top             =   2640
+         Width           =   600
+      End
+      Begin VB.Label Label1 
+         BackStyle       =   0  'Transparent
+         Caption         =   "Scroller horizontal"
+         ForeColor       =   &H00008000&
+         Height          =   435
+         Index           =   4
+         Left            =   5760
+         TabIndex        =   5
+         Top             =   2520
+         Width           =   720
+      End
+      Begin VB.Label Label1 
+         AutoSize        =   -1  'True
+         BackStyle       =   0  'Transparent
+         Caption         =   "Button Right"
+         ForeColor       =   &H00008000&
+         Height          =   195
+         Index           =   3
+         Left            =   5760
+         TabIndex        =   4
+         Top             =   1560
+         Width           =   885
+      End
+      Begin VB.Label Label1 
+         AutoSize        =   -1  'True
+         BackStyle       =   0  'Transparent
+         Caption         =   "Button Left"
+         ForeColor       =   &H00008000&
+         Height          =   195
+         Index           =   2
+         Left            =   120
+         TabIndex        =   3
+         Top             =   1680
+         Width           =   780
+      End
+      Begin VB.Label Label1 
+         AutoSize        =   -1  'True
+         BackStyle       =   0  'Transparent
+         Caption         =   "Button Bottom"
+         ForeColor       =   &H00008000&
+         Height          =   195
+         Index           =   1
+         Left            =   5760
+         TabIndex        =   2
+         Top             =   480
+         Width           =   1005
+      End
+      Begin VB.Label Label1 
+         AutoSize        =   -1  'True
+         BackStyle       =   0  'Transparent
+         Caption         =   "Button Top"
+         ForeColor       =   &H00008000&
+         Height          =   195
+         Index           =   0
+         Left            =   120
+         TabIndex        =   1
+         Top             =   600
+         Width           =   795
+      End
+   End
+End
+Attribute VB_Name = "Pictures"
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = False
+Attribute VB_PredeclaredId = False
+Attribute VB_Exposed = False
+
+' Programmer:        Donckers Frank
+'                    DarkManSoft@Gmail.com
+'
+' Description:       Propertypage Pictures for User Control Scrollbar
+
+
+
+'=====================================================
+' declaration
+'=====================================================
+Dim NewPic As PictureBox
+Dim i, ii As Byte
+Dim LastPath As String
+Dim LastFilterstring As String
+Dim LastFilter(4) As CheckBoxConstants
+Dim Loading As Boolean
+
+
+'=====================================================
+' Draw new backpictures
+'=====================================================
+Private Sub Back_Change(Index As Integer)
+    If Loading = True Then Exit Sub
+    Select Case NewPic.Index
+        Case 0
+            Set Preview3(1).PicBackVertical = NewPic.Picture
+        Case 1
+            Set Preview3(0).PicBackHorizontal = NewPic.Picture
+        Case 2
+            Set Preview3(3).PicBackVerticalDiasabled = NewPic.Picture
+        Case 3
+            Set Preview3(2).PicBackHorizontalDisabled = NewPic.Picture
+    End Select
+    Changed = True
+
+End Sub
+
+'=====================================================
+' Draw new bottom button pictures
+'=====================================================
+Private Sub BtnBottom_Change(Index As Integer)
+    If Loading = True Then Exit Sub
+    Select Case NewPic.Index
+        Case 0
+            Set Preview3(1).PicButtonBottom_UP = NewPic.Picture
+        Case 1
+            Set Preview3(1).PicButtonBottom_DOWN = NewPic.Picture
+        Case 2
+            Set Preview3(3).PicButtonBottom_DISABLED = NewPic.Picture
+        Case 3
+            Set Preview3(1).PicButtonBottom_HOOVER = NewPic.Picture
+    End Select
+    Changed = True
+End Sub
+
+'=====================================================
+' Draw new left button pictures
+'=====================================================
+Private Sub btnLeft_Change(Index As Integer)
+    If Loading = True Then Exit Sub
+    Select Case NewPic.Index
+        Case 0
+            Set Preview3(1).PicButtonLeft_UP = NewPic.Picture
+        Case 1
+            Set Preview3(1).PicButtonLeft_DOWN = NewPic.Picture
+        Case 2
+            Set Preview3(3).PicButtonLeft_DISABLED = NewPic.Picture
+        Case 3
+            Set Preview3(1).PicButtonLeft_HOOVER = NewPic.Picture
+    End Select
+    Changed = True
+End Sub
+
+'=====================================================
+' Draw new Right button pictures
+'=====================================================
+Private Sub btnRight_Change(Index As Integer)
+    If Loading = True Then Exit Sub
+    Select Case NewPic.Index
+        Case 0
+            Set Preview3(1).PicButtonRight_UP = NewPic.Picture
+        Case 1
+            Set Preview3(1).PicButtonRight_DOWN = NewPic.Picture
+        Case 2
+            Set Preview3(3).PicButtonRight_DISABLED = NewPic.Picture
+        Case 3
+            Set Preview3(1).PicButtonRight_HOOVER = NewPic.Picture
+    End Select
+    Changed = True
+End Sub
+
+'=====================================================
+' Draw new top button pictures
+'=====================================================
+Private Sub btnTop_Change(Index As Integer)
+    If Loading = True Then Exit Sub
+    Select Case NewPic.Index
+        Case 0
+            Set Preview3(1).PicButtonTop_UP = NewPic.Picture
+        Case 1
+            Set Preview3(1).PicButtonTop_DOWN = NewPic.Picture
+        Case 2
+            Set Preview3(3).PicButtonTop_DISABLED = NewPic.Picture
+        Case 3
+            Set Preview3(1).PicButtonTop_HOOVER = NewPic.Picture
+    End Select
+    Changed = True
+End Sub
+
+'=====================================================
+' Draw new scroller horizontal pictures
+'=====================================================
+Private Sub scrlHor_Change(Index As Integer)
+    If Loading = True Then Exit Sub
+    Select Case NewPic.Index
+        Case 0
+            Set Preview3(1).PicScrollerHorizontal_UP = NewPic.Picture
+        Case 1
+            Set Preview3(1).PicScrollerHorizontal_DOWN = NewPic.Picture
+        Case 2
+            Set Preview3(3).PicScrollerHorizontal_DISABLED = NewPic.Picture
+        Case 3
+            Set Preview3(1).PicScrollerHorizontal_HOOVER = NewPic.Picture
+    End Select
+    Changed = True
+End Sub
+
+'=====================================================
+' Draw new scroller vertical pictures
+'=====================================================
+Private Sub ScrlVert_Change(Index As Integer)
+    If Loading = True Then Exit Sub
+    Select Case NewPic.Index
+        Case 0
+            Set Preview3(1).PicScrollerVertical_UP = NewPic.Picture
+        Case 1
+            Set Preview3(1).PicScrollerVertical_DOWN = NewPic.Picture
+        Case 2
+            Set Preview3(3).PicScrollerVertical_DISABLED = NewPic.Picture
+        Case 3
+            Set Preview3(1).PicScrollerVertical_HOOVER = NewPic.Picture
+    End Select
+    Changed = True
+End Sub
+
+'=====================================================
+' Select new back pictures
+'=====================================================
+Private Sub cmdBack_Click(Index As Integer)
+    Set NewPic = Back(Index)
+    fraSelectPicure.Visible = True
+End Sub
+
+'=====================================================
+' Select new bottom button pictures
+'=====================================================
+Private Sub cmdBottom_Click(Index As Integer)
+    Set NewPic = BtnBottom(Index)
+    fraSelectPicure.Visible = True
+End Sub
+
+'=====================================================
+' Select new top button pictures
+'=====================================================
+Private Sub cmdTop_Click(Index As Integer)
+    Set NewPic = btnTop(Index)
+    fraSelectPicure.Visible = True
+End Sub
+
+'=====================================================
+' Select new left button pictures
+'=====================================================
+Private Sub cmdLeft_Click(Index As Integer)
+    Set NewPic = btnLeft(Index)
+    fraSelectPicure.Visible = True
+End Sub
+
+'=====================================================
+' Select new right button pictures
+'=====================================================
+Private Sub cmdRight_Click(Index As Integer)
+    Set NewPic = btnRight(Index)
+    fraSelectPicure.Visible = True
+End Sub
+
+
+'=====================================================
+' Select new scroller horizontal pictures
+'=====================================================
+Private Sub cmdScrollHor_Click(Index As Integer)
+    Set NewPic = scrlHor(Index)
+    fraSelectPicure.Visible = True
+End Sub
+
+'=====================================================
+' Cancel picture selection
+'=====================================================
+Private Sub cmdCancel_Click()
+    SaveTheSettings
+    fraSelectPicure.Visible = False
+End Sub
+
+'=====================================================
+' Set picture selection
+'=====================================================
+Private Sub cmdOk_Click()
+    SaveTheSettings
+    If Trim$(txtFilename.Text) <> "" Then
+        NewPic.Picture = LoadPicture(Trim$(txtFilename.Text))
+        Changed = True
+    End If
+    fraSelectPicure.Visible = False
+    SetMaxDim
+End Sub
+
+'=====================================================
+' Save changed settings
+'=====================================================
+Private Sub SaveTheSettings()
+    ' Saves the last selected path and filters with savesetting of usercontrol
+    LastFilterstring = ""
+    For i = 0 To 4
+        If chkFilter(i) = vbChecked Then
+            LastFilterstring = LastFilterstring & chkFilter(i).Caption & ";"
+        End If
+    Next i
+    If Trim$(Dir1.Path) <> "" Then SaveSetting "DMSCROLLBAR", "VALUES", "LASTPATH", Dir1.Path
+    If Trim$(LastFilterstring) <> "" Then SaveSetting "DMSCROLLBAR", "VALUES", "FILTER", Left$(LastFilterstring, Len(LastFilterstring) - 1)
+End Sub
+
+'=====================================================
+' Select new scroller vertical pictures
+'=====================================================
+Private Sub cmdScrollV_Click(Index As Integer)
+    Set NewPic = ScrlVert(Index)
+    fraSelectPicure.Visible = True
+End Sub
+
+'=====================================================
+' Select/deselect filefilters
+'=====================================================
+Private Sub Command1_Click()
+    If Command1.Caption = "Select all" Then
+        For i = 0 To 4
+            LastFilter(i) = chkFilter(i).Value
+            chkFilter(i).Value = vbChecked
+        Next i
+        Command1.Caption = "Reset all"
+    Else
+        For i = 0 To 4
+            chkFilter(i).Value = LastFilter(i)
+        Next i
+        Command1.Caption = "Select all"
+    End If
+End Sub
+
+'=====================================================
+' Select folder
+'=====================================================
+Private Sub Dir1_Change()
+    File1.Path = Dir1.Path
+End Sub
+
+'=====================================================
+' Select drive
+'=====================================================
+Private Sub Drive1_Change()
+    Dir1.Path = Drive1.Drive
+End Sub
+
+'=====================================================
+' Select file
+'=====================================================
+Private Sub File1_Click()
+    txtFilename.Text = Dir1.Path & "\" & File1.FileName
+    picPreview.AutoSize = True
+    picPreview.Picture = LoadPicture(Trim$(txtFilename.Text))
+    picPreview.AutoSize = False
+    If picPreview.Width > 2535 Then picPreview.Width = 2535
+    If picPreview.Height > 4575 Then picPreview.Height = 4575
+End Sub
+
+'=====================================================
+' Select file end set as picture
+'=====================================================
+Private Sub File1_DblClick()
+    txtFilename.Text = Dir1.Path & "\" & File1.FileName
+    picPreview.AutoSize = True
+    picPreview.Picture = LoadPicture(Trim$(txtFilename.Text))
+    picPreview.AutoSize = False
+    If picPreview.Width > 2535 Then picPreview.Width = 2535
+    If picPreview.Height > 4575 Then picPreview.Height = 4575
+    cmdOk_Click
+End Sub
+
+'=====================================================
+' Apply the changes to the usercontrol
+'=====================================================
+Private Sub PropertyPage_ApplyChanges()
+    Set SelectedControls(0).PicButtonTop_UP = btnTop(0).Picture
+    Set SelectedControls(0).PicButtonTop_DOWN = btnTop(1).Picture
+    Set SelectedControls(0).PicButtonTop_DISABLED = btnTop(2).Picture
+    Set SelectedControls(0).PicButtonTop_HOOVER = btnTop(3).Picture
+    Set SelectedControls(0).PicButtonBottom_UP = BtnBottom(0).Picture
+    Set SelectedControls(0).PicButtonBottom_DOWN = BtnBottom(1).Picture
+    Set SelectedControls(0).PicButtonBottom_DISABLED = BtnBottom(2).Picture
+    Set SelectedControls(0).PicButtonBottom_HOOVER = BtnBottom(3).Picture
+    Set SelectedControls(0).PicButtonLeft_UP = btnLeft(0).Picture
+    Set SelectedControls(0).PicButtonLeft_DOWN = btnLeft(1).Picture
+    Set SelectedControls(0).PicButtonLeft_DISABLED = btnLeft(2).Picture
+    Set SelectedControls(0).PicButtonLeft_HOOVER = btnLeft(3).Picture
+    Set SelectedControls(0).PicButtonRight_UP = btnRight(0).Picture
+    Set SelectedControls(0).PicButtonRight_DOWN = btnRight(1).Picture
+    Set SelectedControls(0).PicButtonRight_DISABLED = btnRight(2).Picture
+    Set SelectedControls(0).PicButtonRight_HOOVER = btnRight(3).Picture
+    Set SelectedControls(0).PicScrollerHorizontal_UP = scrlHor(0).Picture
+    Set SelectedControls(0).PicScrollerHorizontal_DOWN = scrlHor(1).Picture
+    Set SelectedControls(0).PicScrollerHorizontal_DISABLED = scrlHor(2).Picture
+    Set SelectedControls(0).PicScrollerHorizontal_HOOVER = scrlHor(3).Picture
+    Set SelectedControls(0).PicScrollerVertical_UP = ScrlVert(0).Picture
+    Set SelectedControls(0).PicScrollerVertical_DOWN = ScrlVert(1).Picture
+    Set SelectedControls(0).PicScrollerVertical_DISABLED = ScrlVert(2).Picture
+    Set SelectedControls(0).PicScrollerVertical_HOOVER = ScrlVert(3).Picture
+    Set SelectedControls(0).PicBackVertical = Back(0).Picture
+    Set SelectedControls(0).PicBackHorizontal = Back(1).Picture
+    Set SelectedControls(0).PicBackVerticalDiasabled = Back(2).Picture
+    Set SelectedControls(0).PicBackHorizontalDisabled = Back(3).Picture
+End Sub
+
+'================================================================
+' Get settings for last used path and filters
+'================================================================
+Private Sub GetTheSettings()
+    ' Gets the last selected path and filters with Getsetting of usercontrol
+    ' Last selected path
+    LastPath = Trim$(GetSetting("DMSCROLLBAR", "VALUES", "LASTPATH", ""))
+    LastFilterstring = Trim$(GetSetting("DMSCROLLBAR", "VALUES", "FILTER", ""))
+    If LastPath <> "" Then
+        Drive1.Drive = LastPath
+        Dir1.Path = LastPath
+        File1.Path = LastPath
+    End If
+    ' Last selected filters
+    For i = 0 To 4
+        chkFilter(i).Value = vbUnchecked
+    Next i
+    If LastFilterstring <> "" Then
+        File1.Pattern = LastFilterstring
+        Dim Pos As Integer
+        Pos = InStr(1, LastFilterstring, "*.bmp", vbTextCompare)
+        If Pos > 0 Then chkFilter(0).Value = vbChecked
+        Pos = InStr(1, LastFilterstring, "*.jpg", vbTextCompare)
+        If Pos > 0 Then chkFilter(1).Value = vbChecked
+        Pos = InStr(1, LastFilterstring, "*.gif", vbTextCompare)
+        If Pos > 0 Then chkFilter(2).Value = vbChecked
+        Pos = InStr(1, LastFilterstring, "*.tif", vbTextCompare)
+        If Pos > 0 Then chkFilter(3).Value = vbChecked
+        Pos = InStr(1, LastFilterstring, "*.png", vbTextCompare)
+        If Pos > 0 Then chkFilter(4).Value = vbChecked
+        Dim AllSelected As Boolean
+        AllSelected = True
+        For i = 0 To 4
+            If chkFilter(i).Value = vbUnchecked Then
+                AllSelected = False
+                Exit For
+            End If
+        Next i
+        If AllSelected = True Then Command1.Caption = "Reset all"
+    End If
+End Sub
+
+'================================================================
+' Set picures to the properties of the usercontrol
+'================================================================
+Private Sub PropertyPage_SelectionChanged()
+    On Error Resume Next
+    Loading = True
+    fraSelectPicure.Top = 240
+    fraSelectPicure.Left = 240
+    GetTheSettings
+    ' Pictures bar
+    Set Back(0).Picture = SelectedControls(0).PicBackVertical
+    Set Back(1).Picture = SelectedControls(0).PicBackHorizontal
+    Back(0).Width = SelectedControls(0).PicBackVertical.Width
+    Back(1).Height = SelectedControls(0).PicBackVertical.Height
+    Set Back(2).Picture = SelectedControls(0).PicBackVerticalDiasabled
+    Set Back(3).Picture = SelectedControls(0).PicBackHorizontalDisabled
+    Back(2).Width = SelectedControls(0).PicBackVertical.Width
+    Back(3).Height = SelectedControls(0).PicBackVertical.Height
+    ' Pictures Top button
+    Set btnTop(0).Picture = SelectedControls(0).PicButtonTop_UP
+    Set btnTop(1).Picture = SelectedControls(0).PicButtonTop_DOWN
+    Set btnTop(2).Picture = SelectedControls(0).PicButtonTop_DISABLED
+    Set btnTop(3).Picture = SelectedControls(0).PicButtonTop_HOOVER
+    ' Pictures bottom button
+    Set BtnBottom(0).Picture = SelectedControls(0).PicButtonBottom_UP
+    Set BtnBottom(1).Picture = SelectedControls(0).PicButtonBottom_DOWN
+    Set BtnBottom(2).Picture = SelectedControls(0).PicButtonBottom_DISABLED
+    Set BtnBottom(3).Picture = SelectedControls(0).PicButtonBottom_HOOVER
+    ' Pictures left button
+    Set btnLeft(0).Picture = SelectedControls(0).PicButtonLeft_UP
+    Set btnLeft(1).Picture = SelectedControls(0).PicButtonLeft_DOWN
+    Set btnLeft(2).Picture = SelectedControls(0).PicButtonLeft_DISABLED
+    Set btnLeft(3).Picture = SelectedControls(0).PicButtonLeft_HOOVER
+    ' Pictures right button
+    Set btnRight(0).Picture = SelectedControls(0).PicButtonRight_UP
+    Set btnRight(1).Picture = SelectedControls(0).PicButtonRight_DOWN
+    Set btnRight(2).Picture = SelectedControls(0).PicButtonRight_DISABLED
+    Set btnRight(3).Picture = SelectedControls(0).PicButtonRight_HOOVER
+    ' Pictures vertical scroller
+    Set ScrlVert(0).Picture = SelectedControls(0).PicScrollerVertical_UP
+    Set ScrlVert(1).Picture = SelectedControls(0).PicScrollerVertical_DOWN
+    Set ScrlVert(2).Picture = SelectedControls(0).PicScrollerVertical_DISABLED
+    Set ScrlVert(3).Picture = SelectedControls(0).PicScrollerVertical_HOOVER
+    ' Pictures horizontal scroller
+    Set scrlHor(0).Picture = SelectedControls(0).PicScrollerHorizontal_UP
+    Set scrlHor(1).Picture = SelectedControls(0).PicScrollerHorizontal_DOWN
+    Set scrlHor(2).Picture = SelectedControls(0).PicScrollerHorizontal_DISABLED
+    Set scrlHor(3).Picture = SelectedControls(0).PicScrollerHorizontal_HOOVER
+    For i = 0 To 3
+        'Set preview property barback vertical
+        Set Preview3(i).PicBackVertical = SelectedControls(0).PicBackVertical
+        Set Preview3(i).PicBackVerticalDiasabled = SelectedControls(0).PicBackVerticalDiasabled
+        'Set preview property barback horizontal
+        Set Preview3(i).PicBackHorizontalDisabled = SelectedControls(0).PicBackHorizontalDisabled
+        Set Preview3(i).PicBackHorizontal = SelectedControls(0).PicBackHorizontal
+        'Set preview property top button
+        Set Preview3(i).PicButtonTop_UP = SelectedControls(0).PicButtonTop_UP
+        Set Preview3(i).PicButtonTop_DOWN = SelectedControls(0).PicButtonTop_DOWN
+        Set Preview3(i).PicButtonTop_DISABLED = SelectedControls(0).PicButtonTop_DISABLED
+        Set Preview3(i).PicButtonTop_HOOVER = SelectedControls(0).PicButtonTop_HOOVER
+        'Set preview property bottom button
+        Set Preview3(i).PicButtonBottom_UP = SelectedControls(0).PicButtonBottom_UP
+        Set Preview3(i).PicButtonBottom_DOWN = SelectedControls(0).PicButtonBottom_DOWN
+        Set Preview3(i).PicButtonBottom_DISABLED = SelectedControls(0).PicButtonBottom_DISABLED
+        Set Preview3(i).PicButtonBottom_HOOVER = SelectedControls(0).PicButtonBottom_HOOVER
+        'Set preview property left button
+        Set Preview3(i).PicButtonLeft_UP = SelectedControls(0).PicButtonLeft_UP
+        Set Preview3(i).PicButtonLeft_DOWN = SelectedControls(0).PicButtonLeft_DOWN
+        Set Preview3(i).PicButtonLeft_DISABLED = SelectedControls(0).PicButtonLeft_DISABLED
+        Set Preview3(i).PicButtonLeft_HOOVER = SelectedControls(0).PicButtonLeft_HOOVER
+        'Set preview property right button
+        Set Preview3(i).PicButtonRight_UP = SelectedControls(0).PicButtonRight_UP
+        Set Preview3(i).PicButtonRight_DOWN = SelectedControls(0).PicButtonRight_DOWN
+        Set Preview3(i).PicButtonRight_DISABLED = SelectedControls(0).PicButtonRight_DISABLED
+        Set Preview3(i).PicButtonRight_HOOVER = SelectedControls(0).PicButtonRight_HOOVER
+        'Set preview property scroller vertical
+        Set Preview3(i).PicScrollerVertical_UP = SelectedControls(0).PicScrollerVertical_UP
+        Set Preview3(i).PicScrollerVertical_DOWN = SelectedControls(0).PicScrollerVertical_DOWN
+        Set Preview3(i).PicScrollerVertical_HOOVER = SelectedControls(0).PicScrollerVertical_HOOVER
+        Set Preview3(i).PicScrollerVertical_DISABLED = SelectedControls(0).PicScrollerVertical_DISABLED
+        'Set preview property scroller horizontal
+        Set Preview3(i).PicScrollerHorizontal_UP = SelectedControls(0).PicScrollerHorizontal_UP
+        Set Preview3(i).PicScrollerHorizontal_DOWN = SelectedControls(0).PicScrollerHorizontal_DOWN
+        Set Preview3(i).PicScrollerHorizontal_HOOVER = SelectedControls(0).PicScrollerHorizontal_HOOVER
+        Set Preview3(i).PicScrollerHorizontal_DISABLED = SelectedControls(0).PicScrollerHorizontal_DISABLED
+    Next i
+    ' Set maximum dimensions for pictureboxes
+    SetMaxDim
+    Loading = False
+End Sub
+
+'================================================================
+' Set maximum dimensions for pictureboxes
+'================================================================
+Private Sub SetMaxDim()
+    ' Buttons and scroller
+    For i = 0 To 3
+        btnTop(i).AutoSize = True
+        btnTop(i).AutoSize = True
+        BtnBottom(i).AutoSize = True
+        BtnBottom(i).AutoSize = True
+        btnLeft(i).AutoSize = True
+        btnLeft(i).AutoSize = True
+        btnRight(i).AutoSize = True
+        btnRight(i).AutoSize = True
+        ScrlVert(i).AutoSize = True
+        scrlHor(i).AutoSize = True
+    Next i
+    For i = 0 To 3
+        If btnTop(i).Height > 735 Then btnTop(i).Height = 735
+        If btnTop(i).Width > 735 Then btnTop(i).Width = 735
+        If BtnBottom(i).Height > 735 Then BtnBottom(i).Height = 735
+        If BtnBottom(i).Width > 735 Then BtnBottom(i).Width = 735
+        If btnLeft(i).Height > 735 Then btnLeft(i).Height = 735
+        If btnLeft(i).Width > 735 Then btnLeft(i).Width = 735
+        If btnRight(i).Height > 735 Then btnRight(i).Height = 735
+        If btnRight(i).Width > 735 Then btnRight(i).Width = 735
+        If ScrlVert(i).Width > 735 Then ScrlVert(i).Width = 735
+        If scrlHor(i).Width > 735 Then scrlHor(i).Width = 735
+    Next i
+    For i = 0 To 3
+        btnTop(i).AutoSize = False
+        btnTop(i).AutoSize = False
+        BtnBottom(i).AutoSize = False
+        BtnBottom(i).AutoSize = False
+        btnLeft(i).AutoSize = False
+        btnLeft(i).AutoSize = False
+        btnRight(i).AutoSize = False
+        btnRight(i).AutoSize = False
+        ScrlVert(i).AutoSize = False
+        scrlHor(i).AutoSize = False
+    Next i
+    ' Barback
+    For i = 0 To 3
+        Back(i).AutoSize = True
+    Next i
+    If Back(0).Width > 1335 Then Back(0).Width = 1335
+    If Back(2).Width > 1335 Then Back(2).Width = 1335
+    If Back(0).Height > 2055 Then Back(0).Height = 2055
+    If Back(2).Height > 2055 Then Back(2).Height = 2055
+    If Back(1).Width > 7215 Then Back(1).Width = 7215
+    If Back(3).Width > 7215 Then Back(3).Width = 7215
+    If Back(1).Height > 2055 Then Back(1).Height = 2055
+    If Back(3).Height > 2055 Then Back(3).Height = 2055
+    For i = 0 To 3
+        Back(i).AutoSize = False
+    Next i
+End Sub
+
