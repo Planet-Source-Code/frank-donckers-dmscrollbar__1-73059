@@ -1,0 +1,3313 @@
+VERSION 5.00
+Begin VB.PropertyPage Colors 
+   AutoRedraw      =   -1  'True
+   Caption         =   "Colors"
+   ClientHeight    =   7290
+   ClientLeft      =   0
+   ClientTop       =   0
+   ClientWidth     =   15465
+   PaletteMode     =   0  'Halftone
+   ScaleHeight     =   7290
+   ScaleWidth      =   15465
+   Begin VB.Frame Frame7 
+      Caption         =   "Preview Disabled"
+      Height          =   2175
+      Left            =   12960
+      TabIndex        =   206
+      Top             =   5040
+      Width           =   2175
+      Begin prjScrollBar.DMGraphicalScrollBar Preview 
+         Height          =   375
+         Index           =   9
+         Left            =   240
+         TabIndex        =   208
+         Top             =   360
+         Width           =   1695
+         _ExtentX        =   2990
+         _ExtentY        =   661
+         BarBorderColor  =   12632256
+         PicBackVertical =   "Colors.pgx":0000
+         PicBackVerticalDiasabled=   "Colors.pgx":9202
+         PicBackHorizontal=   "Colors.pgx":12404
+         PicBackHorizontalDisabled=   "Colors.pgx":1ACFA
+         ButtonsBackColor=   12632256
+         ButtonsBorderColor=   12632256
+         ButtonsArrowColor=   8421504
+         PicButtonTop_UP =   "Colors.pgx":235F0
+         PicButtonTop_DOWN=   "Colors.pgx":23912
+         PicButtonTop_DISABLED=   "Colors.pgx":23C34
+         PicButtonTop_HOOVER=   "Colors.pgx":23F56
+         PicButtonBottom_UP=   "Colors.pgx":24278
+         PicButtonBottom_DOWN=   "Colors.pgx":2459A
+         m_PicButtonBottom_DISABLED=   "Colors.pgx":248BC
+         PicButtonBottom_HOOVER=   "Colors.pgx":24BDE
+         PicButtonLeft_UP=   "Colors.pgx":24F00
+         PicButtonLeft_DOWN=   "Colors.pgx":25222
+         PicButtonLeft_DISABLED=   "Colors.pgx":25544
+         PicButtonLeft_HOOVER=   "Colors.pgx":25866
+         PicButtonRight_UP=   "Colors.pgx":25B88
+         PicButtonRight_DOWN=   "Colors.pgx":25EAA
+         PicButtonRight_DISABLED=   "Colors.pgx":261CC
+         PicButtonRight_HOOVER=   "Colors.pgx":264EE
+         ScrollerBackColor=   12632256
+         ScrollerBorderColor=   12632256
+         ScrollerGripColor=   12632256
+         ScrollerGripperStyle=   1
+         PicScrollerVertical_DOWN=   "Colors.pgx":26810
+         PicScrollerVertical_UP=   "Colors.pgx":26E32
+         PicScrollerVertical_DISABLED=   "Colors.pgx":27454
+         PicScrollerVertical_HOOVER=   "Colors.pgx":27A76
+         PicScrollerHorizontal_UP=   "Colors.pgx":28098
+         PicScrollerHorizontal_DOWN=   "Colors.pgx":2868A
+         PicScrollerHorizontal_DISABLED=   "Colors.pgx":28C7C
+         PicScrollerHorizontal_HOOVER=   "Colors.pgx":2926E
+         DisabledBorderColor=   49344
+         Enabled         =   0   'False
+      End
+   End
+   Begin VB.Frame fraPrev 
+      Caption         =   "Preview Enabled"
+      Height          =   2175
+      Left            =   10560
+      TabIndex        =   187
+      Top             =   5040
+      Width           =   2175
+      Begin prjScrollBar.DMGraphicalScrollBar Preview 
+         Height          =   375
+         Index           =   8
+         Left            =   240
+         TabIndex        =   207
+         Top             =   360
+         Width           =   1695
+         _ExtentX        =   2990
+         _ExtentY        =   661
+         BarBorderColor  =   12632256
+         PicBackVertical =   "Colors.pgx":29860
+         PicBackVerticalDiasabled=   "Colors.pgx":32A62
+         PicBackHorizontal=   "Colors.pgx":3BC64
+         PicBackHorizontalDisabled=   "Colors.pgx":4455A
+         ButtonsBackColor=   12632256
+         ButtonsBorderColor=   12632256
+         ButtonsArrowColor=   8421504
+         PicButtonTop_UP =   "Colors.pgx":4CE50
+         PicButtonTop_DOWN=   "Colors.pgx":4D172
+         PicButtonTop_DISABLED=   "Colors.pgx":4D494
+         PicButtonTop_HOOVER=   "Colors.pgx":4D7B6
+         PicButtonBottom_UP=   "Colors.pgx":4DAD8
+         PicButtonBottom_DOWN=   "Colors.pgx":4DDFA
+         m_PicButtonBottom_DISABLED=   "Colors.pgx":4E11C
+         PicButtonBottom_HOOVER=   "Colors.pgx":4E43E
+         PicButtonLeft_UP=   "Colors.pgx":4E760
+         PicButtonLeft_DOWN=   "Colors.pgx":4EA82
+         PicButtonLeft_DISABLED=   "Colors.pgx":4EDA4
+         PicButtonLeft_HOOVER=   "Colors.pgx":4F0C6
+         PicButtonRight_UP=   "Colors.pgx":4F3E8
+         PicButtonRight_DOWN=   "Colors.pgx":4F70A
+         PicButtonRight_DISABLED=   "Colors.pgx":4FA2C
+         PicButtonRight_HOOVER=   "Colors.pgx":4FD4E
+         ScrollerBackColor=   12632256
+         ScrollerBorderColor=   12632256
+         ScrollerGripColor=   12632256
+         ScrollerGripperStyle=   1
+         PicScrollerVertical_DOWN=   "Colors.pgx":50070
+         PicScrollerVertical_UP=   "Colors.pgx":50692
+         PicScrollerVertical_DISABLED=   "Colors.pgx":50CB4
+         PicScrollerVertical_HOOVER=   "Colors.pgx":512D6
+         PicScrollerHorizontal_UP=   "Colors.pgx":518F8
+         PicScrollerHorizontal_DOWN=   "Colors.pgx":51EEA
+         PicScrollerHorizontal_DISABLED=   "Colors.pgx":524DC
+         PicScrollerHorizontal_HOOVER=   "Colors.pgx":52ACE
+         DisabledBorderColor=   49344
+      End
+   End
+   Begin VB.Frame fraStyles 
+      Caption         =   "Style"
+      Height          =   1935
+      Left            =   120
+      TabIndex        =   186
+      Top             =   5040
+      Width           =   10335
+      Begin VB.Frame Frame6 
+         Caption         =   "Control"
+         Height          =   1335
+         Left            =   240
+         TabIndex        =   203
+         Top             =   360
+         Width           =   2535
+         Begin VB.ComboBox cboOrientation 
+            Height          =   315
+            ItemData        =   "Colors.pgx":530C0
+            Left            =   960
+            List            =   "Colors.pgx":530CA
+            TabIndex        =   204
+            Top             =   480
+            Width           =   1335
+         End
+         Begin VB.Label Label1 
+            AutoSize        =   -1  'True
+            BackStyle       =   0  'Transparent
+            Caption         =   "Orientation"
+            Height          =   195
+            Index           =   16
+            Left            =   120
+            TabIndex        =   205
+            Top             =   480
+            Width           =   765
+         End
+      End
+      Begin VB.Frame Frame5 
+         Caption         =   "Scroller"
+         Height          =   1335
+         Left            =   5400
+         TabIndex        =   198
+         Top             =   360
+         Width           =   2295
+         Begin VB.ComboBox cboGripper 
+            Height          =   315
+            ItemData        =   "Colors.pgx":530E5
+            Left            =   720
+            List            =   "Colors.pgx":53110
+            TabIndex        =   200
+            Top             =   360
+            Width           =   1335
+         End
+         Begin VB.ComboBox cboScrollBorder 
+            Height          =   315
+            ItemData        =   "Colors.pgx":531F1
+            Left            =   720
+            List            =   "Colors.pgx":531FB
+            TabIndex        =   199
+            Top             =   840
+            Width           =   1335
+         End
+         Begin VB.Label Label1 
+            AutoSize        =   -1  'True
+            BackStyle       =   0  'Transparent
+            Caption         =   "Gripper"
+            Height          =   195
+            Index           =   15
+            Left            =   120
+            TabIndex        =   202
+            Top             =   360
+            Width           =   510
+         End
+         Begin VB.Label Label1 
+            AutoSize        =   -1  'True
+            BackStyle       =   0  'Transparent
+            Caption         =   "Borders"
+            Height          =   195
+            Index           =   14
+            Left            =   120
+            TabIndex        =   201
+            Top             =   840
+            Width           =   540
+         End
+      End
+      Begin VB.Frame Frame4 
+         Caption         =   "Bar"
+         Height          =   1335
+         Left            =   2880
+         TabIndex        =   193
+         Top             =   360
+         Width           =   2280
+         Begin VB.ComboBox cboBar 
+            Height          =   315
+            ItemData        =   "Colors.pgx":53213
+            Left            =   720
+            List            =   "Colors.pgx":53220
+            TabIndex        =   195
+            Top             =   360
+            Width           =   1335
+         End
+         Begin VB.ComboBox cboBarBorder 
+            Height          =   315
+            ItemData        =   "Colors.pgx":53244
+            Left            =   720
+            List            =   "Colors.pgx":5324E
+            TabIndex        =   194
+            Top             =   840
+            Width           =   1335
+         End
+         Begin VB.Label Label1 
+            AutoSize        =   -1  'True
+            BackStyle       =   0  'Transparent
+            Caption         =   "Bar"
+            Height          =   195
+            Index           =   13
+            Left            =   120
+            TabIndex        =   197
+            Top             =   360
+            Width           =   240
+         End
+         Begin VB.Label Label1 
+            AutoSize        =   -1  'True
+            BackStyle       =   0  'Transparent
+            Caption         =   "Borders"
+            Height          =   195
+            Index           =   12
+            Left            =   120
+            TabIndex        =   196
+            Top             =   840
+            Width           =   540
+         End
+      End
+      Begin VB.Frame Frame2 
+         Caption         =   "Buttons"
+         Height          =   1335
+         Left            =   7800
+         TabIndex        =   188
+         Top             =   360
+         Width           =   2295
+         Begin VB.ComboBox cbobtnsArrows 
+            Height          =   315
+            ItemData        =   "Colors.pgx":53266
+            Left            =   720
+            List            =   "Colors.pgx":53282
+            TabIndex        =   190
+            Top             =   360
+            Width           =   1335
+         End
+         Begin VB.ComboBox cboBtnsBorder 
+            Height          =   315
+            ItemData        =   "Colors.pgx":53316
+            Left            =   720
+            List            =   "Colors.pgx":53320
+            TabIndex        =   189
+            Top             =   840
+            Width           =   1335
+         End
+         Begin VB.Label Label1 
+            AutoSize        =   -1  'True
+            BackStyle       =   0  'Transparent
+            Caption         =   "Arrows"
+            Height          =   195
+            Index           =   11
+            Left            =   120
+            TabIndex        =   192
+            Top             =   360
+            Width           =   480
+         End
+         Begin VB.Label Label1 
+            AutoSize        =   -1  'True
+            BackStyle       =   0  'Transparent
+            Caption         =   "Borders"
+            Height          =   195
+            Index           =   10
+            Left            =   120
+            TabIndex        =   191
+            Top             =   840
+            Width           =   540
+         End
+      End
+   End
+   Begin VB.Frame fraColors 
+      Caption         =   "Colors"
+      Height          =   4695
+      Left            =   120
+      TabIndex        =   116
+      Top             =   120
+      Width           =   15255
+      Begin VB.CommandButton cmdPred 
+         Caption         =   "Predefined colors"
+         Height          =   615
+         Left            =   240
+         TabIndex        =   185
+         Top             =   3600
+         Width           =   4695
+      End
+      Begin VB.Frame FraButtons 
+         Caption         =   "Buttons"
+         Height          =   1575
+         Left            =   240
+         TabIndex        =   175
+         Top             =   1920
+         Width           =   2175
+         Begin VB.PictureBox picBtnsBack 
+            Height          =   255
+            Left            =   1200
+            ScaleHeight     =   195
+            ScaleWidth      =   195
+            TabIndex        =   181
+            Top             =   360
+            Width           =   255
+         End
+         Begin VB.PictureBox picBtnsArrow 
+            Height          =   255
+            Left            =   1200
+            ScaleHeight     =   195
+            ScaleWidth      =   195
+            TabIndex        =   180
+            Top             =   1080
+            Width           =   255
+         End
+         Begin VB.CommandButton cmdBtnsBack 
+            Caption         =   "..."
+            Height          =   255
+            Left            =   1560
+            TabIndex        =   179
+            Top             =   360
+            Width           =   255
+         End
+         Begin VB.PictureBox picBtnsBorder 
+            Height          =   255
+            Left            =   1200
+            ScaleHeight     =   195
+            ScaleWidth      =   195
+            TabIndex        =   178
+            Top             =   720
+            Width           =   255
+         End
+         Begin VB.CommandButton cmdBtnsBorder 
+            Caption         =   "..."
+            Height          =   255
+            Left            =   1560
+            TabIndex        =   177
+            Top             =   720
+            Width           =   255
+         End
+         Begin VB.CommandButton cmdBtnsArrow 
+            Caption         =   "..."
+            Height          =   255
+            Left            =   1560
+            TabIndex        =   176
+            Top             =   1080
+            Width           =   255
+         End
+         Begin VB.Label Label1 
+            AutoSize        =   -1  'True
+            BackStyle       =   0  'Transparent
+            Caption         =   "BackColor"
+            Height          =   195
+            Index           =   0
+            Left            =   120
+            TabIndex        =   184
+            Top             =   360
+            Width           =   735
+         End
+         Begin VB.Label Label1 
+            AutoSize        =   -1  'True
+            BackStyle       =   0  'Transparent
+            Caption         =   "BorderColor"
+            Height          =   195
+            Index           =   1
+            Left            =   120
+            TabIndex        =   183
+            Top             =   720
+            Width           =   825
+         End
+         Begin VB.Label Label1 
+            AutoSize        =   -1  'True
+            BackStyle       =   0  'Transparent
+            Caption         =   "ArrowColor"
+            Height          =   195
+            Index           =   2
+            Left            =   120
+            TabIndex        =   182
+            Top             =   1080
+            Width           =   765
+         End
+      End
+      Begin VB.Frame fraColorPick 
+         Caption         =   "ColorPicker"
+         Height          =   4095
+         Left            =   7320
+         TabIndex        =   141
+         Top             =   360
+         Visible         =   0   'False
+         Width           =   7455
+         Begin VB.PictureBox picMag 
+            AutoRedraw      =   -1  'True
+            BackColor       =   &H00000000&
+            Height          =   375
+            Left            =   3120
+            ScaleHeight     =   315
+            ScaleWidth      =   315
+            TabIndex        =   173
+            TabStop         =   0   'False
+            ToolTipText     =   "Zoom view of color under cross-hair."
+            Top             =   360
+            Width           =   375
+         End
+         Begin VB.TextBox Text1 
+            Height          =   375
+            Left            =   4920
+            TabIndex        =   172
+            Top             =   2640
+            Width           =   1215
+         End
+         Begin VB.PictureBox PicLight 
+            AutoRedraw      =   -1  'True
+            BackColor       =   &H00000000&
+            Height          =   2655
+            Left            =   3360
+            ScaleHeight     =   2595
+            ScaleWidth      =   315
+            TabIndex        =   171
+            TabStop         =   0   'False
+            ToolTipText     =   "Click to select a shade"
+            Top             =   1080
+            Width           =   375
+         End
+         Begin VB.PictureBox PicShade 
+            AutoRedraw      =   -1  'True
+            BackColor       =   &H00000000&
+            Height          =   2655
+            Left            =   2880
+            ScaleHeight     =   2595
+            ScaleWidth      =   315
+            TabIndex        =   170
+            TabStop         =   0   'False
+            ToolTipText     =   "Click to select a shade"
+            Top             =   1080
+            Width           =   375
+         End
+         Begin VB.PictureBox PicColor 
+            AutoRedraw      =   -1  'True
+            BackColor       =   &H00000000&
+            Height          =   615
+            Left            =   3840
+            ScaleHeight     =   555
+            ScaleWidth      =   1035
+            TabIndex        =   169
+            TabStop         =   0   'False
+            ToolTipText     =   "Selected Color.  Click to generate shades of color."
+            Top             =   2400
+            Width           =   1095
+         End
+         Begin VB.PictureBox picGrad 
+            AutoRedraw      =   -1  'True
+            Height          =   3375
+            Index           =   0
+            Left            =   240
+            Picture         =   "Colors.pgx":53338
+            ScaleHeight     =   221
+            ScaleMode       =   3  'Pixel
+            ScaleWidth      =   165
+            TabIndex        =   168
+            TabStop         =   0   'False
+            ToolTipText     =   "Left-Click to select a color. Right-Click to change the palette."
+            Top             =   360
+            Width           =   2535
+         End
+         Begin VB.CommandButton cmdOk 
+            Caption         =   "Ok"
+            Height          =   375
+            Left            =   6240
+            TabIndex        =   167
+            Top             =   3360
+            Width           =   975
+         End
+         Begin VB.CommandButton cmdCancel 
+            Caption         =   "Cancel"
+            Height          =   375
+            Left            =   5040
+            TabIndex        =   166
+            Top             =   3360
+            Width           =   975
+         End
+         Begin VB.CommandButton cmdColor 
+            Caption         =   "Standard colors"
+            Height          =   495
+            Left            =   3840
+            TabIndex        =   165
+            Top             =   3240
+            Width           =   975
+         End
+         Begin VB.Frame Frame1 
+            Height          =   1935
+            Left            =   3840
+            TabIndex        =   142
+            Top             =   360
+            Width           =   3255
+            Begin VB.Frame fraHSL 
+               Caption         =   "H.S.L."
+               Height          =   1095
+               Left            =   240
+               TabIndex        =   155
+               Top             =   600
+               Width           =   2775
+               Begin VB.TextBox txtHue 
+                  BackColor       =   &H00FFFFFF&
+                  Height          =   285
+                  Left            =   720
+                  Locked          =   -1  'True
+                  TabIndex        =   161
+                  TabStop         =   0   'False
+                  Text            =   "0"
+                  ToolTipText     =   "Color hue"
+                  Top             =   240
+                  Width           =   495
+               End
+               Begin VB.TextBox txtLum 
+                  Height          =   285
+                  Left            =   720
+                  Locked          =   -1  'True
+                  TabIndex        =   160
+                  TabStop         =   0   'False
+                  Text            =   "0"
+                  ToolTipText     =   "Color luminance"
+                  Top             =   480
+                  Width           =   495
+               End
+               Begin VB.TextBox txtSat 
+                  Height          =   285
+                  Left            =   720
+                  Locked          =   -1  'True
+                  TabIndex        =   159
+                  TabStop         =   0   'False
+                  Text            =   "0"
+                  ToolTipText     =   "Color saturation"
+                  Top             =   720
+                  Width           =   495
+               End
+               Begin VB.HScrollBar SatScroll 
+                  Height          =   255
+                  LargeChange     =   10
+                  Left            =   1320
+                  Max             =   240
+                  SmallChange     =   2
+                  TabIndex        =   158
+                  Top             =   720
+                  Width           =   1335
+               End
+               Begin VB.HScrollBar LumScroll 
+                  Height          =   255
+                  LargeChange     =   10
+                  Left            =   1320
+                  Max             =   240
+                  SmallChange     =   2
+                  TabIndex        =   157
+                  Top             =   480
+                  Width           =   1335
+               End
+               Begin VB.HScrollBar HueScroll 
+                  Height          =   255
+                  LargeChange     =   10
+                  Left            =   1320
+                  Max             =   240
+                  SmallChange     =   2
+                  TabIndex        =   156
+                  Top             =   240
+                  Width           =   1335
+               End
+               Begin VB.Label l 
+                  BackStyle       =   0  'Transparent
+                  Caption         =   "Sat"
+                  Height          =   255
+                  Index           =   5
+                  Left            =   120
+                  TabIndex        =   164
+                  Top             =   720
+                  Width           =   495
+               End
+               Begin VB.Label l 
+                  BackStyle       =   0  'Transparent
+                  Caption         =   "Lum"
+                  Height          =   255
+                  Index           =   4
+                  Left            =   120
+                  TabIndex        =   163
+                  Top             =   480
+                  Width           =   495
+               End
+               Begin VB.Label l 
+                  BackStyle       =   0  'Transparent
+                  Caption         =   "Hue"
+                  Height          =   255
+                  Index           =   3
+                  Left            =   120
+                  TabIndex        =   162
+                  Top             =   240
+                  Width           =   495
+               End
+            End
+            Begin VB.Frame fraRGB 
+               Caption         =   "H.S.L."
+               Height          =   1095
+               Left            =   240
+               TabIndex        =   145
+               Top             =   600
+               Visible         =   0   'False
+               Width           =   2775
+               Begin VB.TextBox txtRed 
+                  Height          =   285
+                  Left            =   720
+                  Locked          =   -1  'True
+                  TabIndex        =   151
+                  TabStop         =   0   'False
+                  Text            =   "0"
+                  ToolTipText     =   "Red value of color"
+                  Top             =   240
+                  Width           =   495
+               End
+               Begin VB.HScrollBar RedScroll 
+                  Height          =   255
+                  LargeChange     =   10
+                  Left            =   1320
+                  Max             =   255
+                  SmallChange     =   2
+                  TabIndex        =   150
+                  Top             =   240
+                  Width           =   1335
+               End
+               Begin VB.HScrollBar GreenScroll 
+                  Height          =   255
+                  LargeChange     =   10
+                  Left            =   1320
+                  Max             =   255
+                  SmallChange     =   2
+                  TabIndex        =   149
+                  Top             =   480
+                  Width           =   1335
+               End
+               Begin VB.HScrollBar BlueScroll 
+                  Height          =   255
+                  LargeChange     =   10
+                  Left            =   1320
+                  Max             =   255
+                  SmallChange     =   2
+                  TabIndex        =   148
+                  Top             =   720
+                  Width           =   1335
+               End
+               Begin VB.TextBox txtGreen 
+                  Height          =   285
+                  Left            =   720
+                  Locked          =   -1  'True
+                  TabIndex        =   147
+                  TabStop         =   0   'False
+                  Text            =   "0"
+                  ToolTipText     =   "Green value of color"
+                  Top             =   480
+                  Width           =   495
+               End
+               Begin VB.TextBox txtBlue 
+                  Height          =   285
+                  Left            =   720
+                  Locked          =   -1  'True
+                  TabIndex        =   146
+                  TabStop         =   0   'False
+                  Text            =   "0"
+                  ToolTipText     =   "Blue value of color"
+                  Top             =   720
+                  Width           =   495
+               End
+               Begin VB.Label l 
+                  BackStyle       =   0  'Transparent
+                  Caption         =   "Red"
+                  Height          =   255
+                  Index           =   0
+                  Left            =   120
+                  TabIndex        =   154
+                  Top             =   240
+                  Width           =   495
+               End
+               Begin VB.Label l 
+                  BackStyle       =   0  'Transparent
+                  Caption         =   "Green"
+                  Height          =   255
+                  Index           =   1
+                  Left            =   120
+                  TabIndex        =   153
+                  Top             =   480
+                  Width           =   495
+               End
+               Begin VB.Label l 
+                  BackStyle       =   0  'Transparent
+                  Caption         =   "Blue"
+                  Height          =   255
+                  Index           =   2
+                  Left            =   120
+                  TabIndex        =   152
+                  Top             =   720
+                  Width           =   495
+               End
+            End
+            Begin VB.OptionButton optMode 
+               Caption         =   "&RGB"
+               Height          =   255
+               Index           =   1
+               Left            =   1080
+               TabIndex        =   144
+               Top             =   240
+               Width           =   735
+            End
+            Begin VB.OptionButton optMode 
+               Caption         =   "&HSL"
+               Height          =   255
+               Index           =   0
+               Left            =   240
+               TabIndex        =   143
+               Top             =   240
+               Value           =   -1  'True
+               Width           =   615
+            End
+         End
+         Begin VB.PictureBox picGrad 
+            AutoRedraw      =   -1  'True
+            Height          =   1380
+            Index           =   1
+            Left            =   480
+            Picture         =   "Colors.pgx":545F2
+            ScaleHeight     =   88
+            ScaleMode       =   3  'Pixel
+            ScaleWidth      =   138
+            TabIndex        =   174
+            TabStop         =   0   'False
+            ToolTipText     =   "Left-Click to select a color. Right-Click to change the palette."
+            Top             =   2040
+            Width           =   2130
+         End
+      End
+      Begin VB.Frame fraScroll 
+         Caption         =   "Scroller"
+         Height          =   1575
+         Left            =   2760
+         TabIndex        =   131
+         Top             =   1920
+         Width           =   2175
+         Begin VB.PictureBox PicScrollBack 
+            Height          =   255
+            Left            =   1200
+            ScaleHeight     =   195
+            ScaleWidth      =   195
+            TabIndex        =   137
+            Top             =   360
+            Width           =   255
+         End
+         Begin VB.PictureBox picScrollGrip 
+            Height          =   255
+            Left            =   1200
+            ScaleHeight     =   195
+            ScaleWidth      =   195
+            TabIndex        =   136
+            Top             =   1080
+            Width           =   255
+         End
+         Begin VB.PictureBox PicScrollBorder 
+            Height          =   255
+            Left            =   1200
+            ScaleHeight     =   195
+            ScaleWidth      =   195
+            TabIndex        =   135
+            Top             =   720
+            Width           =   255
+         End
+         Begin VB.CommandButton cmdScrollBack 
+            Caption         =   "..."
+            Height          =   255
+            Left            =   1560
+            TabIndex        =   134
+            Top             =   360
+            Width           =   255
+         End
+         Begin VB.CommandButton cmdScrollBorder 
+            Caption         =   "..."
+            Height          =   255
+            Left            =   1560
+            TabIndex        =   133
+            Top             =   720
+            Width           =   255
+         End
+         Begin VB.CommandButton cmdScrollGrip 
+            Caption         =   "..."
+            Height          =   255
+            Left            =   1560
+            TabIndex        =   132
+            Top             =   1080
+            Width           =   255
+         End
+         Begin VB.Label Label1 
+            AutoSize        =   -1  'True
+            BackStyle       =   0  'Transparent
+            Caption         =   "GripColor"
+            Height          =   195
+            Index           =   5
+            Left            =   120
+            TabIndex        =   140
+            Top             =   1080
+            Width           =   645
+         End
+         Begin VB.Label Label1 
+            AutoSize        =   -1  'True
+            BackStyle       =   0  'Transparent
+            Caption         =   "BorderColor"
+            Height          =   195
+            Index           =   6
+            Left            =   120
+            TabIndex        =   139
+            Top             =   720
+            Width           =   825
+         End
+         Begin VB.Label Label1 
+            AutoSize        =   -1  'True
+            BackStyle       =   0  'Transparent
+            Caption         =   "BackColor"
+            Height          =   195
+            Index           =   7
+            Left            =   120
+            TabIndex        =   138
+            Top             =   360
+            Width           =   735
+         End
+      End
+      Begin VB.Frame fraBar 
+         Caption         =   "Bar"
+         Height          =   1215
+         Left            =   240
+         TabIndex        =   124
+         Top             =   360
+         Width           =   2175
+         Begin VB.PictureBox picBarBack 
+            Height          =   255
+            Left            =   1200
+            ScaleHeight     =   195
+            ScaleWidth      =   195
+            TabIndex        =   128
+            Top             =   360
+            Width           =   255
+         End
+         Begin VB.PictureBox picBarBorder 
+            Height          =   255
+            Left            =   1200
+            ScaleHeight     =   195
+            ScaleWidth      =   195
+            TabIndex        =   127
+            Top             =   720
+            Width           =   255
+         End
+         Begin VB.CommandButton cmdBarBack 
+            Caption         =   "..."
+            Height          =   255
+            Left            =   1560
+            TabIndex        =   126
+            Top             =   360
+            Width           =   255
+         End
+         Begin VB.CommandButton cmdBackBorder 
+            Caption         =   "..."
+            Height          =   255
+            Left            =   1560
+            TabIndex        =   125
+            Top             =   720
+            Width           =   255
+         End
+         Begin VB.Label Label1 
+            AutoSize        =   -1  'True
+            BackStyle       =   0  'Transparent
+            Caption         =   "BorderColor"
+            Height          =   195
+            Index           =   3
+            Left            =   120
+            TabIndex        =   130
+            Top             =   720
+            Width           =   825
+         End
+         Begin VB.Label Label1 
+            AutoSize        =   -1  'True
+            BackStyle       =   0  'Transparent
+            Caption         =   "BackColor"
+            Height          =   195
+            Index           =   4
+            Left            =   120
+            TabIndex        =   129
+            Top             =   360
+            Width           =   735
+         End
+      End
+      Begin VB.Frame fraDisabled 
+         Caption         =   "Disabled"
+         Height          =   1215
+         Left            =   2760
+         TabIndex        =   117
+         Top             =   360
+         Width           =   2175
+         Begin VB.PictureBox picDisBack 
+            Height          =   255
+            Left            =   1200
+            ScaleHeight     =   195
+            ScaleWidth      =   195
+            TabIndex        =   121
+            Top             =   360
+            Width           =   255
+         End
+         Begin VB.PictureBox picDisBorder 
+            Height          =   255
+            Left            =   1200
+            ScaleHeight     =   195
+            ScaleWidth      =   195
+            TabIndex        =   120
+            Top             =   720
+            Width           =   255
+         End
+         Begin VB.CommandButton cmdDisBack 
+            Caption         =   "..."
+            Height          =   255
+            Left            =   1560
+            TabIndex        =   119
+            Top             =   360
+            Width           =   255
+         End
+         Begin VB.CommandButton cmdDisBorder 
+            Caption         =   "..."
+            Height          =   255
+            Left            =   1560
+            TabIndex        =   118
+            Top             =   720
+            Width           =   255
+         End
+         Begin VB.Label Label1 
+            AutoSize        =   -1  'True
+            BackStyle       =   0  'Transparent
+            Caption         =   "BorderColor"
+            Height          =   195
+            Index           =   8
+            Left            =   120
+            TabIndex        =   123
+            Top             =   720
+            Width           =   825
+         End
+         Begin VB.Label Label1 
+            AutoSize        =   -1  'True
+            BackStyle       =   0  'Transparent
+            Caption         =   "BackColor"
+            Height          =   195
+            Index           =   9
+            Left            =   120
+            TabIndex        =   122
+            Top             =   360
+            Width           =   735
+         End
+      End
+   End
+   Begin VB.Frame fraPredefined 
+      Caption         =   "Predefined"
+      Height          =   7095
+      Left            =   120
+      TabIndex        =   0
+      Top             =   120
+      Visible         =   0   'False
+      Width           =   15255
+      Begin VB.CommandButton cmdCanceled 
+         Caption         =   "Cancel"
+         Height          =   495
+         Left            =   12360
+         TabIndex        =   115
+         Top             =   6240
+         Width           =   1215
+      End
+      Begin VB.CommandButton cmdSet 
+         Caption         =   "Prev"
+         Height          =   375
+         Index           =   51
+         Left            =   11640
+         TabIndex        =   62
+         Top             =   6480
+         Width           =   530
+      End
+      Begin VB.CommandButton cmdSet 
+         Caption         =   "Prev"
+         Height          =   375
+         Index           =   50
+         Left            =   11640
+         TabIndex        =   61
+         Top             =   6000
+         Width           =   530
+      End
+      Begin VB.CommandButton cmdSet 
+         Caption         =   "Prev"
+         Height          =   375
+         Index           =   49
+         Left            =   11640
+         TabIndex        =   60
+         Top             =   5520
+         Width           =   530
+      End
+      Begin VB.CommandButton cmdSet 
+         Caption         =   "Prev"
+         Height          =   375
+         Index           =   48
+         Left            =   8520
+         TabIndex        =   59
+         Top             =   6480
+         Width           =   530
+      End
+      Begin VB.CommandButton cmdSet 
+         Caption         =   "Prev"
+         Height          =   375
+         Index           =   47
+         Left            =   8520
+         TabIndex        =   58
+         Top             =   6000
+         Width           =   530
+      End
+      Begin VB.CommandButton cmdSet 
+         Caption         =   "Prev"
+         Height          =   375
+         Index           =   46
+         Left            =   8520
+         TabIndex        =   57
+         Top             =   5520
+         Width           =   530
+      End
+      Begin VB.CommandButton cmdSet 
+         Caption         =   "Prev"
+         Height          =   375
+         Index           =   45
+         Left            =   5520
+         TabIndex        =   56
+         Top             =   6480
+         Width           =   530
+      End
+      Begin VB.CommandButton cmdSet 
+         Caption         =   "Prev"
+         Height          =   375
+         Index           =   44
+         Left            =   5520
+         TabIndex        =   55
+         Top             =   6000
+         Width           =   530
+      End
+      Begin VB.CommandButton cmdSet 
+         Caption         =   "Prev"
+         Height          =   375
+         Index           =   43
+         Left            =   5520
+         TabIndex        =   54
+         Top             =   5520
+         Width           =   530
+      End
+      Begin VB.CommandButton cmdSet 
+         Caption         =   "Prev"
+         Height          =   375
+         Index           =   42
+         Left            =   2520
+         TabIndex        =   53
+         Top             =   6480
+         Width           =   530
+      End
+      Begin VB.CommandButton cmdSet 
+         Caption         =   "Prev"
+         Height          =   375
+         Index           =   41
+         Left            =   2520
+         TabIndex        =   52
+         Top             =   6000
+         Width           =   530
+      End
+      Begin VB.CommandButton cmdSet 
+         Caption         =   "Prev"
+         Height          =   375
+         Index           =   40
+         Left            =   2520
+         TabIndex        =   51
+         Top             =   5520
+         Width           =   530
+      End
+      Begin VB.CommandButton cmdSet 
+         Caption         =   "Prev"
+         Height          =   375
+         Index           =   39
+         Left            =   11640
+         TabIndex        =   50
+         Top             =   4800
+         Width           =   530
+      End
+      Begin VB.CommandButton cmdSet 
+         Caption         =   "Prev"
+         Height          =   375
+         Index           =   38
+         Left            =   11640
+         TabIndex        =   49
+         Top             =   4320
+         Width           =   530
+      End
+      Begin VB.CommandButton cmdSet 
+         Caption         =   "Prev"
+         Height          =   375
+         Index           =   37
+         Left            =   11640
+         TabIndex        =   48
+         Top             =   3840
+         Width           =   530
+      End
+      Begin VB.CommandButton cmdSet 
+         Caption         =   "Prev"
+         Height          =   375
+         Index           =   36
+         Left            =   11640
+         TabIndex        =   47
+         Top             =   2880
+         Width           =   530
+      End
+      Begin VB.CommandButton cmdSet 
+         Caption         =   "Prev"
+         Height          =   375
+         Index           =   35
+         Left            =   11640
+         TabIndex        =   46
+         Top             =   3360
+         Width           =   530
+      End
+      Begin VB.CommandButton cmdSet 
+         Caption         =   "Prev"
+         Height          =   375
+         Index           =   34
+         Left            =   8520
+         TabIndex        =   45
+         Top             =   4800
+         Width           =   530
+      End
+      Begin VB.CommandButton cmdSet 
+         Caption         =   "Prev"
+         Height          =   375
+         Index           =   33
+         Left            =   8520
+         TabIndex        =   44
+         Top             =   4320
+         Width           =   530
+      End
+      Begin VB.CommandButton cmdSet 
+         Caption         =   "Prev"
+         Height          =   375
+         Index           =   32
+         Left            =   8520
+         TabIndex        =   43
+         Top             =   3840
+         Width           =   530
+      End
+      Begin VB.CommandButton cmdSet 
+         Caption         =   "Prev"
+         Height          =   375
+         Index           =   31
+         Left            =   8520
+         TabIndex        =   42
+         Top             =   2880
+         Width           =   530
+      End
+      Begin VB.CommandButton cmdSet 
+         Caption         =   "Prev"
+         Height          =   375
+         Index           =   30
+         Left            =   8520
+         TabIndex        =   41
+         Top             =   3360
+         Width           =   530
+      End
+      Begin VB.CommandButton cmdSet 
+         Caption         =   "Prev"
+         Height          =   375
+         Index           =   29
+         Left            =   5520
+         TabIndex        =   40
+         Top             =   4800
+         Width           =   530
+      End
+      Begin VB.CommandButton cmdSet 
+         Caption         =   "Prev"
+         Height          =   375
+         Index           =   28
+         Left            =   5520
+         TabIndex        =   39
+         Top             =   4320
+         Width           =   530
+      End
+      Begin VB.CommandButton cmdSet 
+         Caption         =   "Prev"
+         Height          =   375
+         Index           =   27
+         Left            =   5520
+         TabIndex        =   38
+         Top             =   3840
+         Width           =   530
+      End
+      Begin VB.CommandButton cmdSet 
+         Caption         =   "Prev"
+         Height          =   375
+         Index           =   26
+         Left            =   5520
+         TabIndex        =   37
+         Top             =   2880
+         Width           =   530
+      End
+      Begin VB.CommandButton cmdSet 
+         Caption         =   "Prev"
+         Height          =   375
+         Index           =   25
+         Left            =   5520
+         TabIndex        =   36
+         Top             =   3360
+         Width           =   530
+      End
+      Begin VB.CommandButton cmdSet 
+         Caption         =   "Prev"
+         Height          =   375
+         Index           =   24
+         Left            =   2520
+         TabIndex        =   35
+         Top             =   2880
+         Width           =   530
+      End
+      Begin VB.CommandButton cmdSet 
+         Caption         =   "Prev"
+         Height          =   375
+         Index           =   23
+         Left            =   2520
+         TabIndex        =   34
+         Top             =   3360
+         Width           =   530
+      End
+      Begin VB.CommandButton cmdSet 
+         Caption         =   "Prev"
+         Height          =   375
+         Index           =   22
+         Left            =   2520
+         TabIndex        =   33
+         Top             =   3840
+         Width           =   530
+      End
+      Begin VB.CommandButton cmdSet 
+         Caption         =   "Prev"
+         Height          =   375
+         Index           =   21
+         Left            =   2520
+         TabIndex        =   32
+         Top             =   4320
+         Width           =   530
+      End
+      Begin VB.CommandButton cmdSet 
+         Caption         =   "Prev"
+         Height          =   375
+         Index           =   20
+         Left            =   2520
+         TabIndex        =   31
+         Top             =   4800
+         Width           =   530
+      End
+      Begin VB.CommandButton cmdSet 
+         Caption         =   "Prev"
+         Height          =   375
+         Index           =   19
+         Left            =   11640
+         TabIndex        =   30
+         Top             =   2160
+         Width           =   530
+      End
+      Begin VB.CommandButton cmdSet 
+         Caption         =   "Prev"
+         Height          =   375
+         Index           =   18
+         Left            =   11640
+         TabIndex        =   29
+         Top             =   1680
+         Width           =   530
+      End
+      Begin VB.CommandButton cmdSet 
+         Caption         =   "Prev"
+         Height          =   375
+         Index           =   17
+         Left            =   11640
+         TabIndex        =   28
+         Top             =   1200
+         Width           =   530
+      End
+      Begin VB.CommandButton cmdSet 
+         Caption         =   "Prev"
+         Height          =   375
+         Index           =   16
+         Left            =   11640
+         TabIndex        =   27
+         Top             =   240
+         Width           =   530
+      End
+      Begin VB.CommandButton cmdSet 
+         Caption         =   "Prev"
+         Height          =   375
+         Index           =   15
+         Left            =   11640
+         TabIndex        =   26
+         Top             =   720
+         Width           =   530
+      End
+      Begin VB.CommandButton cmdSet 
+         Caption         =   "Prev"
+         Height          =   375
+         Index           =   14
+         Left            =   8520
+         TabIndex        =   25
+         Top             =   2160
+         Width           =   530
+      End
+      Begin VB.CommandButton cmdSet 
+         Caption         =   "Prev"
+         Height          =   375
+         Index           =   13
+         Left            =   8520
+         TabIndex        =   24
+         Top             =   1680
+         Width           =   530
+      End
+      Begin VB.CommandButton cmdSet 
+         Caption         =   "Prev"
+         Height          =   375
+         Index           =   12
+         Left            =   8520
+         TabIndex        =   23
+         Top             =   1200
+         Width           =   530
+      End
+      Begin VB.CommandButton cmdSet 
+         Caption         =   "Prev"
+         Height          =   375
+         Index           =   11
+         Left            =   8520
+         TabIndex        =   22
+         Top             =   240
+         Width           =   530
+      End
+      Begin VB.CommandButton cmdSet 
+         Caption         =   "Prev"
+         Height          =   375
+         Index           =   10
+         Left            =   8520
+         TabIndex        =   21
+         Top             =   720
+         Width           =   530
+      End
+      Begin VB.CommandButton cmdSet 
+         Caption         =   "Prev"
+         Height          =   375
+         Index           =   9
+         Left            =   5520
+         TabIndex        =   20
+         Top             =   2160
+         Width           =   530
+      End
+      Begin VB.CommandButton cmdSet 
+         Caption         =   "Prev"
+         Height          =   375
+         Index           =   8
+         Left            =   5520
+         TabIndex        =   19
+         Top             =   1680
+         Width           =   530
+      End
+      Begin VB.CommandButton cmdSet 
+         Caption         =   "Prev"
+         Height          =   375
+         Index           =   7
+         Left            =   5520
+         TabIndex        =   18
+         Top             =   1200
+         Width           =   530
+      End
+      Begin VB.CommandButton cmdSet 
+         Caption         =   "Prev"
+         Height          =   375
+         Index           =   6
+         Left            =   5520
+         TabIndex        =   17
+         Top             =   240
+         Width           =   530
+      End
+      Begin VB.CommandButton cmdSet 
+         Caption         =   "Prev"
+         Height          =   375
+         Index           =   5
+         Left            =   5520
+         TabIndex        =   16
+         Top             =   720
+         Width           =   530
+      End
+      Begin VB.CommandButton cmdSet 
+         Caption         =   "Prev"
+         Height          =   375
+         Index           =   4
+         Left            =   2520
+         TabIndex        =   15
+         Top             =   2160
+         Width           =   530
+      End
+      Begin VB.CommandButton cmdSet 
+         Caption         =   "Prev"
+         Height          =   375
+         Index           =   3
+         Left            =   2520
+         TabIndex        =   14
+         Top             =   1680
+         Width           =   530
+      End
+      Begin VB.CommandButton cmdSet 
+         Caption         =   "Prev"
+         Height          =   375
+         Index           =   2
+         Left            =   2520
+         TabIndex        =   13
+         Top             =   1200
+         Width           =   530
+      End
+      Begin VB.CommandButton cmdSet 
+         Caption         =   "Prev"
+         Height          =   375
+         Index           =   1
+         Left            =   2520
+         TabIndex        =   12
+         Top             =   720
+         Width           =   530
+      End
+      Begin VB.CommandButton cmdSet 
+         Caption         =   "Prev"
+         Height          =   375
+         Index           =   0
+         Left            =   2520
+         TabIndex        =   11
+         Top             =   240
+         Width           =   530
+      End
+      Begin VB.CommandButton cmdSetColors 
+         Caption         =   "Set as colors"
+         Height          =   495
+         Left            =   13800
+         TabIndex        =   10
+         Top             =   6240
+         Width           =   1335
+      End
+      Begin VB.Frame Frame3 
+         Caption         =   "Preview"
+         Height          =   4935
+         Left            =   12360
+         TabIndex        =   1
+         Top             =   960
+         Width           =   2775
+         Begin prjScrollBar.DMGraphicalScrollBar Preview 
+            Height          =   375
+            Index           =   0
+            Left            =   240
+            TabIndex        =   2
+            Top             =   360
+            Width           =   2295
+            _ExtentX        =   4048
+            _ExtentY        =   661
+            BarBorderColor  =   12632256
+            BarBackColor    =   14737632
+            ButtonsBackColor=   12632256
+            ButtonsBorderColor=   12632256
+            ButtonsArrowColor=   8421504
+            ButtonsArrowStyle=   0
+            ScrollerBackColor=   12632256
+            ScrollerBorderColor=   12632256
+            ScrollerGripColor=   12632256
+            ScrollerGripperStyle=   1
+         End
+         Begin prjScrollBar.DMGraphicalScrollBar Preview 
+            Height          =   375
+            Index           =   1
+            Left            =   240
+            TabIndex        =   3
+            Top             =   840
+            Width           =   2295
+            _ExtentX        =   4048
+            _ExtentY        =   661
+            BarBorderColor  =   12632256
+            BarBackColor    =   14737632
+            ButtonsBackColor=   12632256
+            ButtonsBorderColor=   12632256
+            ButtonsArrowColor=   8421504
+            ButtonsArrowStyle=   0
+            ScrollerBackColor=   12632256
+            ScrollerBorderColor=   12632256
+            ScrollerGripColor=   12632256
+         End
+         Begin prjScrollBar.DMGraphicalScrollBar Preview 
+            Height          =   375
+            Index           =   2
+            Left            =   240
+            TabIndex        =   4
+            Top             =   1320
+            Width           =   2295
+            _ExtentX        =   4048
+            _ExtentY        =   661
+            BarBorderColor  =   12632256
+            BarBackColor    =   14737632
+            ButtonsBackColor=   12632256
+            ButtonsBorderColor=   12632256
+            ButtonsArrowColor=   8421504
+            ButtonsArrowStyle=   0
+            ScrollerBackColor=   12632256
+            ScrollerBorderColor=   12632256
+            ScrollerGripColor=   12632256
+            ScrollerGripperStyle=   1
+         End
+         Begin prjScrollBar.DMGraphicalScrollBar Preview 
+            Height          =   375
+            Index           =   3
+            Left            =   240
+            TabIndex        =   5
+            Top             =   1800
+            Width           =   2295
+            _ExtentX        =   4048
+            _ExtentY        =   661
+            BarBorderColor  =   12632256
+            BarBackColor    =   14737632
+            ButtonsBackColor=   12632256
+            ButtonsBorderColor=   12632256
+            ButtonsArrowColor=   8421504
+            ButtonsArrowStyle=   0
+            ScrollerBackColor=   12632256
+            ScrollerBorderColor=   12632256
+            ScrollerGripColor=   12632256
+         End
+         Begin prjScrollBar.DMGraphicalScrollBar Preview 
+            Height          =   2295
+            Index           =   4
+            Left            =   2160
+            TabIndex        =   6
+            Top             =   2400
+            Width           =   375
+            _ExtentX        =   661
+            _ExtentY        =   4048
+            BarBorderColor  =   12632256
+            BarBackColor    =   14737632
+            ButtonsBackColor=   12632256
+            ButtonsBorderColor=   12632256
+            ButtonsArrowColor=   8421504
+            ButtonsArrowStyle=   0
+            ScrollerBackColor=   12632256
+            ScrollerBorderColor=   12632256
+            ScrollerGripColor=   12632256
+            Orientation     =   1
+         End
+         Begin prjScrollBar.DMGraphicalScrollBar Preview 
+            Height          =   2295
+            Index           =   5
+            Left            =   240
+            TabIndex        =   7
+            Top             =   2400
+            Width           =   375
+            _ExtentX        =   661
+            _ExtentY        =   4048
+            BarBorderColor  =   12632256
+            BarBackColor    =   14737632
+            ButtonsBackColor=   12632256
+            ButtonsBorderColor=   12632256
+            ButtonsArrowColor=   8421504
+            ButtonsArrowStyle=   0
+            ScrollerBackColor=   12632256
+            ScrollerBorderColor=   12632256
+            ScrollerGripColor=   12632256
+            ScrollerGripperStyle=   1
+            Orientation     =   1
+         End
+         Begin prjScrollBar.DMGraphicalScrollBar Preview 
+            Height          =   2295
+            Index           =   6
+            Left            =   1560
+            TabIndex        =   8
+            Top             =   2400
+            Width           =   375
+            _ExtentX        =   661
+            _ExtentY        =   4048
+            BarBorderColor  =   12632256
+            BarBackColor    =   14737632
+            ButtonsBackColor=   12632256
+            ButtonsBorderColor=   12632256
+            ButtonsArrowColor=   8421504
+            ButtonsArrowStyle=   0
+            ScrollerBackColor=   12632256
+            ScrollerBorderColor=   12632256
+            ScrollerGripColor=   12632256
+            ScrollerGripperStyle=   1
+            Orientation     =   1
+         End
+         Begin prjScrollBar.DMGraphicalScrollBar Preview 
+            Height          =   2295
+            Index           =   7
+            Left            =   840
+            TabIndex        =   9
+            Top             =   2400
+            Width           =   375
+            _ExtentX        =   661
+            _ExtentY        =   4048
+            BarBorderColor  =   12632256
+            BarBackColor    =   14737632
+            ButtonsBackColor=   12632256
+            ButtonsBorderColor=   12632256
+            ButtonsArrowColor=   8421504
+            ButtonsArrowStyle=   0
+            ScrollerBackColor=   12632256
+            ScrollerBorderColor=   12632256
+            ScrollerGripColor=   12632256
+            Orientation     =   1
+         End
+      End
+      Begin prjScrollBar.DMGraphicalScrollBar DMGraphicalScrollBar 
+         Height          =   375
+         Index           =   40
+         Left            =   240
+         TabIndex        =   63
+         Top             =   5520
+         Width           =   2295
+         _ExtentX        =   4048
+         _ExtentY        =   661
+         BarBorderColor  =   33023
+         BarBackColor    =   8438015
+         ButtonsBackColor=   11762232
+         ButtonsBorderColor=   11762232
+         ButtonsArrowColor=   33023
+         ButtonsArrowStyle=   0
+         ScrollerBackColor=   11762232
+         ScrollerBorderColor=   11762232
+         ScrollerGripColor=   11762232
+         ScrollerGripperStyle=   1
+      End
+      Begin prjScrollBar.DMGraphicalScrollBar DMGraphicalScrollBar 
+         Height          =   375
+         Index           =   3
+         Left            =   240
+         TabIndex        =   64
+         Top             =   1680
+         Width           =   2295
+         _ExtentX        =   4048
+         _ExtentY        =   661
+         BarBorderColor  =   128
+         BarBackColor    =   128
+         ButtonsArrowColor=   128
+         ButtonsArrowStyle=   0
+         ScrollerGripColor=   128
+         ScrollerGripperStyle=   1
+      End
+      Begin prjScrollBar.DMGraphicalScrollBar DMGraphicalScrollBar 
+         Height          =   375
+         Index           =   1
+         Left            =   240
+         TabIndex        =   65
+         Top             =   720
+         Width           =   2295
+         _ExtentX        =   4048
+         _ExtentY        =   661
+         BarBorderColor  =   0
+         BarBackColor    =   0
+         ButtonsBackColor=   64
+         ButtonsBorderColor=   64
+         ButtonsArrowColor=   64
+         ButtonsArrowStyle=   0
+         ScrollerBackColor=   64
+         ScrollerBorderColor=   64
+         ScrollerGripperStyle=   1
+      End
+      Begin prjScrollBar.DMGraphicalScrollBar DMGraphicalScrollBar 
+         Height          =   375
+         Index           =   2
+         Left            =   240
+         TabIndex        =   66
+         Top             =   1200
+         Width           =   2295
+         _ExtentX        =   4048
+         _ExtentY        =   661
+         BarBorderColor  =   128
+         BarBackColor    =   8421504
+         ButtonsBackColor=   128
+         ButtonsBorderColor=   128
+         ButtonsArrowColor=   128
+         ButtonsArrowStyle=   0
+         ScrollerBackColor=   128
+         ScrollerBorderColor=   128
+         ScrollerGripperStyle=   1
+      End
+      Begin prjScrollBar.DMGraphicalScrollBar DMGraphicalScrollBar 
+         Height          =   375
+         Index           =   0
+         Left            =   240
+         TabIndex        =   67
+         Top             =   240
+         Width           =   2295
+         _ExtentX        =   4048
+         _ExtentY        =   661
+         BarBorderColor  =   0
+         BarBackColor    =   0
+         ButtonsBackColor=   0
+         ButtonsArrowColor=   64
+         ScrollerBackColor=   0
+         ScrollerGripColor=   64
+         ScrollerGripperStyle=   1
+         Locked          =   -1  'True
+      End
+      Begin prjScrollBar.DMGraphicalScrollBar DMGraphicalScrollBar 
+         Height          =   375
+         Index           =   4
+         Left            =   240
+         TabIndex        =   68
+         Top             =   2160
+         Width           =   2295
+         _ExtentX        =   4048
+         _ExtentY        =   661
+         BarBorderColor  =   128
+         BarBackColor    =   192
+         ButtonsBackColor=   192
+         ButtonsBorderColor=   128
+         ButtonsArrowColor=   192
+         ButtonsArrowStyle=   0
+         ScrollerBackColor=   192
+         ScrollerBorderColor=   128
+         ScrollerGripColor=   192
+         ScrollerGripperStyle=   1
+      End
+      Begin prjScrollBar.DMGraphicalScrollBar DMGraphicalScrollBar 
+         Height          =   375
+         Index           =   8
+         Left            =   3240
+         TabIndex        =   69
+         Top             =   1680
+         Width           =   2295
+         _ExtentX        =   4048
+         _ExtentY        =   661
+         BarBorderColor  =   418842
+         BarBackColor    =   418842
+         ButtonsArrowColor=   418842
+         ButtonsArrowStyle=   0
+         ScrollerGripColor=   418842
+         ScrollerGripperStyle=   1
+      End
+      Begin prjScrollBar.DMGraphicalScrollBar DMGraphicalScrollBar 
+         Height          =   375
+         Index           =   5
+         Left            =   3240
+         TabIndex        =   70
+         Top             =   720
+         Width           =   2295
+         _ExtentX        =   4048
+         _ExtentY        =   661
+         BarBorderColor  =   0
+         BarBackColor    =   0
+         ButtonsBackColor=   16384
+         ButtonsBorderColor=   16384
+         ButtonsArrowStyle=   0
+         ScrollerBackColor=   16384
+         ScrollerBorderColor=   16384
+         ScrollerGripperStyle=   1
+      End
+      Begin prjScrollBar.DMGraphicalScrollBar DMGraphicalScrollBar 
+         Height          =   375
+         Index           =   7
+         Left            =   3240
+         TabIndex        =   71
+         Top             =   1200
+         Width           =   2295
+         _ExtentX        =   4048
+         _ExtentY        =   661
+         BarBorderColor  =   32768
+         BarBackColor    =   8421504
+         ButtonsBackColor=   418842
+         ButtonsBorderColor=   418842
+         ButtonsArrowColor=   418842
+         ButtonsArrowStyle=   0
+         ScrollerBackColor=   418842
+         ScrollerBorderColor=   418842
+         ScrollerGripperStyle=   1
+      End
+      Begin prjScrollBar.DMGraphicalScrollBar DMGraphicalScrollBar 
+         Height          =   375
+         Index           =   9
+         Left            =   3240
+         TabIndex        =   72
+         Top             =   2160
+         Width           =   2295
+         _ExtentX        =   4048
+         _ExtentY        =   661
+         BarBorderColor  =   418842
+         BarBackColor    =   418842
+         ButtonsBackColor=   418842
+         ButtonsBorderColor=   418842
+         ButtonsArrowColor=   418842
+         ButtonsArrowStyle=   0
+         ScrollerBackColor=   418842
+         ScrollerBorderColor=   418842
+         ScrollerGripColor=   418842
+         ScrollerGripperStyle=   1
+      End
+      Begin prjScrollBar.DMGraphicalScrollBar DMGraphicalScrollBar 
+         Height          =   375
+         Index           =   13
+         Left            =   6240
+         TabIndex        =   73
+         Top             =   1680
+         Width           =   2295
+         _ExtentX        =   4048
+         _ExtentY        =   661
+         BarBorderColor  =   8388608
+         BarBackColor    =   8388608
+         ButtonsArrowColor=   8388608
+         ButtonsArrowStyle=   0
+         ScrollerGripColor=   8388608
+         ScrollerGripperStyle=   1
+      End
+      Begin prjScrollBar.DMGraphicalScrollBar DMGraphicalScrollBar 
+         Height          =   375
+         Index           =   11
+         Left            =   6240
+         TabIndex        =   74
+         Top             =   720
+         Width           =   2295
+         _ExtentX        =   4048
+         _ExtentY        =   661
+         BarBorderColor  =   0
+         BarBackColor    =   0
+         ButtonsBackColor=   4194304
+         ButtonsBorderColor=   4194304
+         ButtonsArrowStyle=   0
+         ScrollerBackColor=   4194304
+         ScrollerBorderColor=   4194304
+         ScrollerGripperStyle=   1
+      End
+      Begin prjScrollBar.DMGraphicalScrollBar DMGraphicalScrollBar 
+         Height          =   375
+         Index           =   12
+         Left            =   6240
+         TabIndex        =   75
+         Top             =   1200
+         Width           =   2295
+         _ExtentX        =   4048
+         _ExtentY        =   661
+         BarBorderColor  =   8388608
+         BarBackColor    =   8421504
+         ButtonsBackColor=   8388608
+         ButtonsBorderColor=   4194304
+         ButtonsArrowColor=   8388608
+         ButtonsArrowStyle=   0
+         ScrollerBackColor=   8388608
+         ScrollerBorderColor=   4194304
+         ScrollerGripperStyle=   1
+      End
+      Begin prjScrollBar.DMGraphicalScrollBar DMGraphicalScrollBar 
+         Height          =   375
+         Index           =   10
+         Left            =   6240
+         TabIndex        =   76
+         Top             =   240
+         Width           =   2295
+         _ExtentX        =   4048
+         _ExtentY        =   661
+         BarBorderColor  =   0
+         BarBackColor    =   0
+         ButtonsBackColor=   0
+         ButtonsArrowColor=   4194304
+         ButtonsArrowStyle=   0
+         ScrollerBackColor=   0
+         ScrollerGripColor=   4194304
+         ScrollerGripperStyle=   1
+      End
+      Begin prjScrollBar.DMGraphicalScrollBar DMGraphicalScrollBar 
+         Height          =   375
+         Index           =   14
+         Left            =   6240
+         TabIndex        =   77
+         Top             =   2160
+         Width           =   2295
+         _ExtentX        =   4048
+         _ExtentY        =   661
+         BarBorderColor  =   8388608
+         BarBackColor    =   12582912
+         ButtonsBackColor=   12582912
+         ButtonsBorderColor=   8388608
+         ButtonsArrowColor=   12582912
+         ButtonsArrowStyle=   0
+         ScrollerBackColor=   12582912
+         ScrollerBorderColor=   8388608
+         ScrollerGripColor=   12582912
+         ScrollerGripperStyle=   1
+      End
+      Begin prjScrollBar.DMGraphicalScrollBar DMGraphicalScrollBar 
+         Height          =   375
+         Index           =   23
+         Left            =   240
+         TabIndex        =   78
+         Top             =   4320
+         Width           =   2295
+         _ExtentX        =   4048
+         _ExtentY        =   661
+         BarBorderColor  =   8388736
+         BarBackColor    =   8388736
+         ButtonsArrowColor=   8388736
+         ButtonsArrowStyle=   0
+         ScrollerGripColor=   8388736
+         ScrollerGripperStyle=   1
+      End
+      Begin prjScrollBar.DMGraphicalScrollBar DMGraphicalScrollBar 
+         Height          =   375
+         Index           =   21
+         Left            =   240
+         TabIndex        =   79
+         Top             =   3360
+         Width           =   2295
+         _ExtentX        =   4048
+         _ExtentY        =   661
+         BarBorderColor  =   0
+         BarBackColor    =   0
+         ButtonsBackColor=   4194368
+         ButtonsBorderColor=   4194368
+         ButtonsArrowStyle=   0
+         ScrollerBackColor=   4194368
+         ScrollerBorderColor=   4194368
+         ScrollerGripperStyle=   1
+      End
+      Begin prjScrollBar.DMGraphicalScrollBar DMGraphicalScrollBar 
+         Height          =   375
+         Index           =   22
+         Left            =   240
+         TabIndex        =   80
+         Top             =   3840
+         Width           =   2295
+         _ExtentX        =   4048
+         _ExtentY        =   661
+         BarBorderColor  =   8388736
+         BarBackColor    =   8421504
+         ButtonsBackColor=   8388736
+         ButtonsBorderColor=   8388736
+         ButtonsArrowColor=   8388736
+         ButtonsArrowStyle=   0
+         ScrollerBackColor=   8388736
+         ScrollerBorderColor=   8388736
+         ScrollerGripperStyle=   1
+      End
+      Begin prjScrollBar.DMGraphicalScrollBar DMGraphicalScrollBar 
+         Height          =   375
+         Index           =   20
+         Left            =   240
+         TabIndex        =   81
+         Top             =   2880
+         Width           =   2295
+         _ExtentX        =   4048
+         _ExtentY        =   661
+         BarBorderColor  =   0
+         BarBackColor    =   0
+         ButtonsBackColor=   0
+         ButtonsArrowColor=   4194368
+         ButtonsArrowStyle=   0
+         ScrollerBackColor=   0
+         ScrollerGripColor=   4194368
+         ScrollerGripperStyle=   1
+      End
+      Begin prjScrollBar.DMGraphicalScrollBar DMGraphicalScrollBar 
+         Height          =   375
+         Index           =   24
+         Left            =   240
+         TabIndex        =   82
+         Top             =   4800
+         Width           =   2295
+         _ExtentX        =   4048
+         _ExtentY        =   661
+         BarBorderColor  =   8388736
+         BarBackColor    =   12583104
+         ButtonsBackColor=   12583104
+         ButtonsBorderColor=   8388736
+         ButtonsArrowColor=   12583104
+         ButtonsArrowStyle=   0
+         ScrollerBackColor=   12583104
+         ScrollerBorderColor=   8388736
+         ScrollerGripColor=   12583104
+         ScrollerGripperStyle=   1
+      End
+      Begin prjScrollBar.DMGraphicalScrollBar DMGraphicalScrollBar 
+         Height          =   375
+         Index           =   28
+         Left            =   3240
+         TabIndex        =   83
+         Top             =   4320
+         Width           =   2295
+         _ExtentX        =   4048
+         _ExtentY        =   661
+         BarBorderColor  =   5538020
+         BarBackColor    =   5538020
+         ButtonsArrowColor=   5538020
+         ButtonsArrowStyle=   0
+         ScrollerGripColor=   5538020
+         ScrollerGripperStyle=   1
+      End
+      Begin prjScrollBar.DMGraphicalScrollBar DMGraphicalScrollBar 
+         Height          =   375
+         Index           =   26
+         Left            =   3240
+         TabIndex        =   84
+         Top             =   3360
+         Width           =   2295
+         _ExtentX        =   4048
+         _ExtentY        =   661
+         BarBorderColor  =   0
+         BarBackColor    =   0
+         ButtonsBackColor=   16576
+         ButtonsBorderColor=   16576
+         ButtonsArrowStyle=   0
+         ScrollerBackColor=   16576
+         ScrollerBorderColor=   16576
+         ScrollerGripperStyle=   1
+      End
+      Begin prjScrollBar.DMGraphicalScrollBar DMGraphicalScrollBar 
+         Height          =   375
+         Index           =   27
+         Left            =   3240
+         TabIndex        =   85
+         Top             =   3840
+         Width           =   2295
+         _ExtentX        =   4048
+         _ExtentY        =   661
+         BarBorderColor  =   5538020
+         BarBackColor    =   8421504
+         ButtonsBackColor=   5538020
+         ButtonsBorderColor=   5538020
+         ButtonsArrowColor=   16576
+         ButtonsArrowStyle=   0
+         ScrollerBackColor=   5538020
+         ScrollerBorderColor=   5538020
+         ScrollerGripColor=   16576
+         ScrollerGripperStyle=   1
+      End
+      Begin prjScrollBar.DMGraphicalScrollBar DMGraphicalScrollBar 
+         Height          =   375
+         Index           =   25
+         Left            =   3240
+         TabIndex        =   86
+         Top             =   2880
+         Width           =   2295
+         _ExtentX        =   4048
+         _ExtentY        =   661
+         BarBorderColor  =   0
+         BarBackColor    =   0
+         ButtonsBackColor=   0
+         ButtonsArrowColor=   16576
+         ButtonsArrowStyle=   0
+         ScrollerBackColor=   0
+         ScrollerGripColor=   16576
+         ScrollerGripperStyle=   1
+      End
+      Begin prjScrollBar.DMGraphicalScrollBar DMGraphicalScrollBar 
+         Height          =   375
+         Index           =   29
+         Left            =   3240
+         TabIndex        =   87
+         Top             =   4800
+         Width           =   2295
+         _ExtentX        =   4048
+         _ExtentY        =   661
+         BarBorderColor  =   16576
+         BarBackColor    =   5538020
+         ButtonsBackColor=   5538020
+         ButtonsBorderColor=   5538020
+         ButtonsArrowColor=   5538020
+         ButtonsArrowStyle=   0
+         ScrollerBackColor=   5538020
+         ScrollerBorderColor=   5538020
+         ScrollerGripColor=   5538020
+         ScrollerGripperStyle=   1
+      End
+      Begin prjScrollBar.DMGraphicalScrollBar DMGraphicalScrollBar 
+         Height          =   375
+         Index           =   33
+         Left            =   6240
+         TabIndex        =   88
+         Top             =   4320
+         Width           =   2295
+         _ExtentX        =   4048
+         _ExtentY        =   661
+         BarBorderColor  =   639456
+         BarBackColor    =   639456
+         ButtonsArrowColor=   565692
+         ButtonsArrowStyle=   0
+         ScrollerGripColor=   639456
+         ScrollerGripperStyle=   1
+      End
+      Begin prjScrollBar.DMGraphicalScrollBar DMGraphicalScrollBar 
+         Height          =   375
+         Index           =   31
+         Left            =   6240
+         TabIndex        =   89
+         Top             =   3360
+         Width           =   2295
+         _ExtentX        =   4048
+         _ExtentY        =   661
+         BarBorderColor  =   0
+         BarBackColor    =   0
+         ButtonsBackColor=   565692
+         ButtonsBorderColor=   565692
+         ButtonsArrowStyle=   0
+         ScrollerBackColor=   565692
+         ScrollerBorderColor=   565692
+         ScrollerGripperStyle=   1
+      End
+      Begin prjScrollBar.DMGraphicalScrollBar DMGraphicalScrollBar 
+         Height          =   375
+         Index           =   32
+         Left            =   6240
+         TabIndex        =   90
+         Top             =   3840
+         Width           =   2295
+         _ExtentX        =   4048
+         _ExtentY        =   661
+         BarBorderColor  =   639456
+         BarBackColor    =   8421504
+         ButtonsBackColor=   639456
+         ButtonsBorderColor=   639456
+         ButtonsArrowColor=   565692
+         ButtonsArrowStyle=   0
+         ScrollerBackColor=   639456
+         ScrollerBorderColor=   639456
+         ScrollerGripColor=   565692
+         ScrollerGripperStyle=   1
+      End
+      Begin prjScrollBar.DMGraphicalScrollBar DMGraphicalScrollBar 
+         Height          =   375
+         Index           =   30
+         Left            =   6240
+         TabIndex        =   91
+         Top             =   2880
+         Width           =   2295
+         _ExtentX        =   4048
+         _ExtentY        =   661
+         BarBorderColor  =   0
+         BarBackColor    =   0
+         ButtonsBackColor=   0
+         ButtonsArrowColor=   565692
+         ButtonsArrowStyle=   0
+         ScrollerBackColor=   0
+         ScrollerGripColor=   565692
+         ScrollerGripperStyle=   1
+      End
+      Begin prjScrollBar.DMGraphicalScrollBar DMGraphicalScrollBar 
+         Height          =   375
+         Index           =   34
+         Left            =   6240
+         TabIndex        =   92
+         Top             =   4800
+         Width           =   2295
+         _ExtentX        =   4048
+         _ExtentY        =   661
+         BarBorderColor  =   565692
+         BarBackColor    =   639456
+         ButtonsBackColor=   639456
+         ButtonsBorderColor=   639456
+         ButtonsArrowColor=   565692
+         ButtonsArrowStyle=   0
+         ScrollerBackColor=   639456
+         ScrollerBorderColor=   639456
+         ScrollerGripColor=   565692
+         ScrollerGripperStyle=   1
+      End
+      Begin prjScrollBar.DMGraphicalScrollBar DMGraphicalScrollBar 
+         Height          =   375
+         Index           =   18
+         Left            =   9360
+         TabIndex        =   93
+         Top             =   1680
+         Width           =   2295
+         _ExtentX        =   4048
+         _ExtentY        =   661
+         BarBorderColor  =   8421376
+         BarBackColor    =   8421376
+         ButtonsArrowColor=   8421376
+         ButtonsArrowStyle=   0
+         ScrollerGripColor=   8421376
+         ScrollerGripperStyle=   1
+      End
+      Begin prjScrollBar.DMGraphicalScrollBar DMGraphicalScrollBar 
+         Height          =   375
+         Index           =   16
+         Left            =   9360
+         TabIndex        =   94
+         Top             =   720
+         Width           =   2295
+         _ExtentX        =   4048
+         _ExtentY        =   661
+         BarBorderColor  =   0
+         BarBackColor    =   0
+         ButtonsBackColor=   4210688
+         ButtonsBorderColor=   4210688
+         ButtonsArrowColor=   4210688
+         ButtonsArrowStyle=   0
+         ScrollerBackColor=   4210688
+         ScrollerBorderColor=   4210688
+         ScrollerGripperStyle=   1
+      End
+      Begin prjScrollBar.DMGraphicalScrollBar DMGraphicalScrollBar 
+         Height          =   375
+         Index           =   17
+         Left            =   9360
+         TabIndex        =   95
+         Top             =   1200
+         Width           =   2295
+         _ExtentX        =   4048
+         _ExtentY        =   661
+         BarBorderColor  =   8421376
+         BarBackColor    =   8421504
+         ButtonsBackColor=   8421376
+         ButtonsBorderColor=   8421376
+         ButtonsArrowColor=   8421376
+         ButtonsArrowStyle=   0
+         ScrollerBackColor=   8421376
+         ScrollerBorderColor=   8421376
+         ScrollerGripperStyle=   1
+      End
+      Begin prjScrollBar.DMGraphicalScrollBar DMGraphicalScrollBar 
+         Height          =   375
+         Index           =   15
+         Left            =   9360
+         TabIndex        =   96
+         Top             =   240
+         Width           =   2295
+         _ExtentX        =   4048
+         _ExtentY        =   661
+         BarBorderColor  =   0
+         BarBackColor    =   0
+         ButtonsBackColor=   0
+         ButtonsArrowColor=   4210688
+         ButtonsArrowStyle=   0
+         ScrollerBackColor=   0
+         ScrollerGripColor=   4210688
+         ScrollerGripperStyle=   1
+      End
+      Begin prjScrollBar.DMGraphicalScrollBar DMGraphicalScrollBar 
+         Height          =   375
+         Index           =   19
+         Left            =   9360
+         TabIndex        =   97
+         Top             =   2160
+         Width           =   2295
+         _ExtentX        =   4048
+         _ExtentY        =   661
+         BarBorderColor  =   8421376
+         BarBackColor    =   12632064
+         ButtonsBackColor=   12632064
+         ButtonsBorderColor=   8421376
+         ButtonsArrowColor=   8421376
+         ButtonsArrowStyle=   0
+         ScrollerBackColor=   12632064
+         ScrollerBorderColor=   8421376
+         ScrollerGripColor=   8421376
+         ScrollerGripperStyle=   1
+      End
+      Begin prjScrollBar.DMGraphicalScrollBar DMGraphicalScrollBar 
+         Height          =   375
+         Index           =   38
+         Left            =   9360
+         TabIndex        =   98
+         Top             =   4320
+         Width           =   2295
+         _ExtentX        =   4048
+         _ExtentY        =   661
+         BarBackColor    =   4210752
+         ButtonsBackColor=   12632256
+         ButtonsBorderColor=   12632256
+         ButtonsArrowColor=   4210752
+         ButtonsArrowStyle=   0
+         ScrollerBackColor=   12632256
+         ScrollerBorderColor=   12632256
+         ScrollerGripperStyle=   1
+      End
+      Begin prjScrollBar.DMGraphicalScrollBar DMGraphicalScrollBar 
+         Height          =   375
+         Index           =   36
+         Left            =   9360
+         TabIndex        =   99
+         Top             =   3360
+         Width           =   2295
+         _ExtentX        =   4048
+         _ExtentY        =   661
+         BarBorderColor  =   0
+         BarBackColor    =   0
+         ButtonsBackColor=   4210752
+         ButtonsBorderColor=   0
+         ButtonsArrowStyle=   0
+         ScrollerBackColor=   4210752
+         ScrollerBorderColor=   0
+         ScrollerGripperStyle=   1
+      End
+      Begin prjScrollBar.DMGraphicalScrollBar DMGraphicalScrollBar 
+         Height          =   375
+         Index           =   37
+         Left            =   9360
+         TabIndex        =   100
+         Top             =   3840
+         Width           =   2295
+         _ExtentX        =   4048
+         _ExtentY        =   661
+         BarBorderColor  =   4210752
+         BarBackColor    =   8421504
+         ButtonsBorderColor=   4210752
+         ButtonsArrowColor=   8421504
+         ButtonsArrowStyle=   0
+         ScrollerBorderColor=   4210752
+         ScrollerGripperStyle=   1
+      End
+      Begin prjScrollBar.DMGraphicalScrollBar DMGraphicalScrollBar 
+         Height          =   375
+         Index           =   35
+         Left            =   9360
+         TabIndex        =   101
+         Top             =   2880
+         Width           =   2295
+         _ExtentX        =   4048
+         _ExtentY        =   661
+         BarBorderColor  =   0
+         BarBackColor    =   0
+         ButtonsBackColor=   0
+         ButtonsArrowStyle=   0
+         ScrollerBackColor=   0
+         ScrollerGripColor=   0
+         ScrollerGripperStyle=   1
+      End
+      Begin prjScrollBar.DMGraphicalScrollBar DMGraphicalScrollBar 
+         Height          =   375
+         Index           =   39
+         Left            =   9360
+         TabIndex        =   102
+         Top             =   4800
+         Width           =   2295
+         _ExtentX        =   4048
+         _ExtentY        =   661
+         BarBorderColor  =   12632256
+         BarBackColor    =   14737632
+         ButtonsBackColor=   12632256
+         ButtonsBorderColor=   12632256
+         ButtonsArrowColor=   8421504
+         ButtonsArrowStyle=   0
+         ScrollerBackColor=   12632256
+         ScrollerBorderColor=   12632256
+         ScrollerGripColor=   12632256
+         ScrollerGripperStyle=   1
+      End
+      Begin prjScrollBar.DMGraphicalScrollBar DMGraphicalScrollBar 
+         Height          =   375
+         Index           =   42
+         Left            =   240
+         TabIndex        =   103
+         Top             =   6480
+         Width           =   2295
+         _ExtentX        =   4048
+         _ExtentY        =   661
+         BarBorderColor  =   11762232
+         BarBackColor    =   8438015
+         ButtonsBackColor=   33023
+         ButtonsBorderColor=   11762232
+         ButtonsArrowColor=   11762232
+         ButtonsArrowStyle=   0
+         ScrollerBackColor=   33023
+         ScrollerBorderColor=   11762232
+         ScrollerGripColor=   11762232
+         ScrollerGripperStyle=   1
+      End
+      Begin prjScrollBar.DMGraphicalScrollBar DMGraphicalScrollBar 
+         Height          =   375
+         Index           =   41
+         Left            =   240
+         TabIndex        =   104
+         Top             =   6000
+         Width           =   2295
+         _ExtentX        =   4048
+         _ExtentY        =   661
+         BarBorderColor  =   33023
+         BarBackColor    =   11762232
+         ButtonsBackColor=   33023
+         ButtonsBorderColor=   33023
+         ButtonsArrowColor=   11762232
+         ButtonsArrowStyle=   0
+         ScrollerBackColor=   33023
+         ScrollerBorderColor=   33023
+         ScrollerGripColor=   11762232
+         ScrollerGripperStyle=   1
+      End
+      Begin prjScrollBar.DMGraphicalScrollBar DMGraphicalScrollBar 
+         Height          =   375
+         Index           =   43
+         Left            =   3240
+         TabIndex        =   105
+         Top             =   5520
+         Width           =   2295
+         _ExtentX        =   4048
+         _ExtentY        =   661
+         BarBorderColor  =   5283161
+         BarBackColor    =   8438015
+         ButtonsBackColor=   5283161
+         ButtonsBorderColor=   5283161
+         ButtonsArrowColor=   5283161
+         ButtonsArrowStyle=   0
+         ScrollerBackColor=   5283161
+         ScrollerBorderColor=   5283161
+         ScrollerGripColor=   5283161
+         ScrollerGripperStyle=   1
+      End
+      Begin prjScrollBar.DMGraphicalScrollBar DMGraphicalScrollBar 
+         Height          =   375
+         Index           =   45
+         Left            =   3240
+         TabIndex        =   106
+         Top             =   6480
+         Width           =   2295
+         _ExtentX        =   4048
+         _ExtentY        =   661
+         BarBorderColor  =   5283161
+         BarBackColor    =   8438015
+         ButtonsBackColor=   33023
+         ButtonsBorderColor=   5283161
+         ButtonsArrowColor=   5283161
+         ButtonsArrowStyle=   0
+         ScrollerBackColor=   33023
+         ScrollerBorderColor=   5283161
+         ScrollerGripColor=   5283161
+         ScrollerGripperStyle=   1
+      End
+      Begin prjScrollBar.DMGraphicalScrollBar DMGraphicalScrollBar 
+         Height          =   375
+         Index           =   44
+         Left            =   3240
+         TabIndex        =   107
+         Top             =   6000
+         Width           =   2295
+         _ExtentX        =   4048
+         _ExtentY        =   661
+         BarBorderColor  =   33023
+         BarBackColor    =   5283161
+         ButtonsBackColor=   33023
+         ButtonsBorderColor=   33023
+         ButtonsArrowColor=   5283161
+         ButtonsArrowStyle=   0
+         ScrollerBackColor=   33023
+         ScrollerBorderColor=   33023
+         ScrollerGripColor=   5283161
+         ScrollerGripperStyle=   1
+      End
+      Begin prjScrollBar.DMGraphicalScrollBar DMGraphicalScrollBar 
+         Height          =   375
+         Index           =   46
+         Left            =   6240
+         TabIndex        =   108
+         Top             =   5520
+         Width           =   2295
+         _ExtentX        =   4048
+         _ExtentY        =   661
+         BarBorderColor  =   9266579
+         BarBackColor    =   8438015
+         ButtonsBackColor=   9266579
+         ButtonsBorderColor=   9266579
+         ButtonsArrowColor=   9266579
+         ButtonsArrowStyle=   0
+         ScrollerBackColor=   9266579
+         ScrollerBorderColor=   9266579
+         ScrollerGripColor=   9266579
+         ScrollerGripperStyle=   1
+      End
+      Begin prjScrollBar.DMGraphicalScrollBar DMGraphicalScrollBar 
+         Height          =   375
+         Index           =   48
+         Left            =   6240
+         TabIndex        =   109
+         Top             =   6480
+         Width           =   2295
+         _ExtentX        =   4048
+         _ExtentY        =   661
+         BarBorderColor  =   9266579
+         BarBackColor    =   8438015
+         ButtonsBackColor=   33023
+         ButtonsBorderColor=   9266579
+         ButtonsArrowColor=   9266579
+         ButtonsArrowStyle=   0
+         ScrollerBackColor=   33023
+         ScrollerBorderColor=   9266579
+         ScrollerGripColor=   9266579
+         ScrollerGripperStyle=   1
+      End
+      Begin prjScrollBar.DMGraphicalScrollBar DMGraphicalScrollBar 
+         Height          =   375
+         Index           =   47
+         Left            =   6240
+         TabIndex        =   110
+         Top             =   6000
+         Width           =   2295
+         _ExtentX        =   4048
+         _ExtentY        =   661
+         BarBorderColor  =   33023
+         BarBackColor    =   9266579
+         ButtonsBackColor=   33023
+         ButtonsBorderColor=   33023
+         ButtonsArrowColor=   9266579
+         ButtonsArrowStyle=   0
+         ScrollerBackColor=   33023
+         ScrollerBorderColor=   33023
+         ScrollerGripColor=   9266579
+         ScrollerGripperStyle=   1
+      End
+      Begin prjScrollBar.DMGraphicalScrollBar DMGraphicalScrollBar 
+         Height          =   375
+         Index           =   49
+         Left            =   9360
+         TabIndex        =   111
+         Top             =   5520
+         Width           =   2295
+         _ExtentX        =   4048
+         _ExtentY        =   661
+         BarBorderColor  =   4080831
+         BarBackColor    =   8438015
+         ButtonsBackColor=   4080831
+         ButtonsBorderColor=   4080831
+         ButtonsArrowColor=   4080831
+         ButtonsArrowStyle=   0
+         ScrollerBackColor=   4080831
+         ScrollerBorderColor=   4080831
+         ScrollerGripColor=   4080831
+         ScrollerGripperStyle=   1
+      End
+      Begin prjScrollBar.DMGraphicalScrollBar DMGraphicalScrollBar 
+         Height          =   375
+         Index           =   51
+         Left            =   9360
+         TabIndex        =   112
+         Top             =   6480
+         Width           =   2295
+         _ExtentX        =   4048
+         _ExtentY        =   661
+         BarBorderColor  =   4080831
+         BarBackColor    =   8438015
+         ButtonsBackColor=   33023
+         ButtonsBorderColor=   4080831
+         ButtonsArrowColor=   4080831
+         ButtonsArrowStyle=   0
+         ScrollerBackColor=   33023
+         ScrollerBorderColor=   4080831
+         ScrollerGripColor=   4080831
+         ScrollerGripperStyle=   1
+      End
+      Begin prjScrollBar.DMGraphicalScrollBar DMGraphicalScrollBar 
+         Height          =   375
+         Index           =   50
+         Left            =   9360
+         TabIndex        =   113
+         Top             =   6000
+         Width           =   2295
+         _ExtentX        =   4048
+         _ExtentY        =   661
+         BarBorderColor  =   33023
+         BarBackColor    =   4080831
+         ButtonsBackColor=   33023
+         ButtonsBorderColor=   33023
+         ButtonsArrowColor=   4080831
+         ButtonsArrowStyle=   0
+         ScrollerBackColor=   33023
+         ScrollerBorderColor=   33023
+         ScrollerGripColor=   4080831
+         ScrollerGripperStyle=   1
+      End
+      Begin prjScrollBar.DMGraphicalScrollBar DMGraphicalScrollBar 
+         Height          =   375
+         Index           =   6
+         Left            =   3240
+         TabIndex        =   114
+         Top             =   240
+         Width           =   2295
+         _ExtentX        =   4048
+         _ExtentY        =   661
+         BarBorderColor  =   0
+         BarBackColor    =   0
+         ButtonsBackColor=   0
+         ButtonsArrowColor=   16384
+         ButtonsArrowStyle=   0
+         ScrollerBackColor=   0
+         ScrollerGripColor=   16384
+         ScrollerGripperStyle=   1
+      End
+   End
+End
+Attribute VB_Name = "Colors"
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = False
+Attribute VB_PredeclaredId = False
+Attribute VB_Exposed = False
+
+' Programmer:        Donckers Frank
+'                    DarkManSoft@Gmail.com
+'
+' Description:       Propertypage Colors for User Control Scrollbar
+
+
+
+'=====================================================
+' declaration
+'=====================================================
+Dim ColorPic As PictureBox
+Dim ButtonClicked As Boolean
+
+'=====================================================
+' Button cancel predifined colors
+'=====================================================
+Private Sub cmdCanceled_Click()
+    fraPredefined.Visible = False
+End Sub
+
+'=====================================================
+' Button set selected predifined colors to preview
+'=====================================================
+Private Sub cmdSet_Click(Index As Integer)
+    Dim i As Byte
+    For i = 0 To 7
+        Preview(i).BarBackColor = DMGraphicalScrollBar(Index).BarBackColor
+        Preview(i).BarBorderColor = DMGraphicalScrollBar(Index).BarBorderColor
+        Preview(i).BarBorderColor = DMGraphicalScrollBar(Index).BarBorderColor
+        Preview(i).BarBorderStyle = DMGraphicalScrollBar(Index).BarBorderStyle
+        Preview(i).ButtonsArrowColor = DMGraphicalScrollBar(Index).ButtonsArrowColor
+        Preview(i).ButtonsBackColor = DMGraphicalScrollBar(Index).ButtonsBackColor
+        Preview(i).ButtonsBorderColor = DMGraphicalScrollBar(Index).ButtonsBorderColor
+        Preview(i).ButtonsBorderStyle = DMGraphicalScrollBar(Index).ButtonsBorderStyle
+        Preview(i).ScrollerBackColor = DMGraphicalScrollBar(Index).ScrollerBackColor
+        Preview(i).ScrollerBorderColor = DMGraphicalScrollBar(Index).ScrollerBorderColor
+        Preview(i).ScrollerBorderStyle = DMGraphicalScrollBar(Index).ScrollerBorderStyle
+        Preview(i).ScrollerGripColor = DMGraphicalScrollBar(Index).ScrollerGripColor
+    Next i
+    ButtonClicked = True
+End Sub
+
+'=====================================================
+' Button set selected predifined colors
+'=====================================================
+Private Sub cmdSetColors_Click()
+    If ButtonClicked = True Then
+        picBarBack.BackColor = Preview(0).BarBackColor
+        picBtnsBack.BackColor = Preview(0).BarBorderColor
+        picBtnsBorder.BackColor = Preview(0).ButtonsBackColor
+        picBtnsBorder.BackColor = Preview(0).ButtonsBorderColor
+        picBtnsArrow.BackColor = Preview(0).ButtonsArrowColor
+        PicScrollBack.BackColor = Preview(0).ScrollerBackColor
+        PicScrollBorder.BackColor = Preview(0).ScrollerBorderColor
+        picScrollGrip.BackColor = Preview(0).ScrollerGripColor
+        Preview(8).BarBackColor = Preview(0).BarBackColor
+        Preview(8).BarBorderColor = Preview(0).BarBorderColor
+        Preview(8).ButtonsBackColor = Preview(0).ButtonsBackColor
+        Preview(8).ButtonsBorderColor = Preview(0).ButtonsBorderColor
+        Preview(8).ButtonsArrowColor = Preview(0).ButtonsArrowColor
+        Preview(8).ScrollerBackColor = Preview(0).ScrollerBackColor
+        Preview(8).ScrollerBorderColor = Preview(0).ScrollerBorderColor
+        Preview(8).ScrollerGripColor = Preview(0).ScrollerGripColor
+        Changed = True
+        fraPredefined.Visible = False
+    Else
+        MsgBox "No Scrollbar selected", vboko + vbExclamation, "Error"
+    End If
+End Sub
+
+'=====================================================
+' Enable/disable frames
+'=====================================================
+Private Sub Disable_EnableFrames(IsEnabled As Boolean)
+    fraBar.Enabled = IsEnabled
+    FraButtons.Enabled = IsEnabled
+    fraDisabled.Enabled = IsEnabled
+    fraScroll.Enabled = IsEnabled
+    On Error GoTo InvalidColor
+    PicColor.BackColor = ColorPic.BackColor
+    Dim Hue As Integer
+    Dim Sat As Integer
+    Dim Lum As Integer
+    rgb_get PicColor.BackColor
+    RGBtoHSL txtRed.Text, txtGreen.Text, txtBlue.Text, Hue, Sat, Lum
+    txtHue.Text = Hue
+    txtSat.Text = Sat
+    txtLum.Text = Lum
+    HueScroll.Value = txtHue.Text
+    SatScroll.Value = txtSat.Text
+    LumScroll.Value = txtLum.Text
+    DrawShadeAndLight PicColor.BackColor, &H0
+    GoTo ValidColor
+InvalidColor:
+    PicColor.BackColor = &H0
+ValidColor:
+End Sub
+
+'=====================================================
+' Select bordercolor bar
+'=====================================================
+Private Sub cmdBackBorder_Click()
+    Set ColorPic = picBarBorder
+    fraColorPick.Visible = True
+    Disable_EnableFrames False
+    Preview(8).BarBorderColor = picBarBorder.BackColor
+End Sub
+
+'=====================================================
+' Select backcolor bar
+'=====================================================
+Private Sub cmdBarBack_Click()
+    Set ColorPic = picBarBack
+    fraColorPick.Visible = True
+    Disable_EnableFrames False
+    Preview(8).BarBackColor = picBarBack.BackColor
+End Sub
+
+'=====================================================
+' Select arrowscolor
+'=====================================================
+Private Sub cmdBtnsArrow_Click()
+    Set ColorPic = picBtnsArrow
+    fraColorPick.Visible = True
+    Disable_EnableFrames False
+    Preview(8).ButtonsArrowColor = picBtnsArrow.BackColor
+End Sub
+
+'=====================================================
+' Select backcolor buttons
+'=====================================================
+Private Sub cmdBtnsBack_Click()
+    Set ColorPic = picBtnsBack
+    fraColorPick.Visible = True
+    Disable_EnableFrames False
+    Preview(8).ButtonsBackColor = picBtnsBack.BackColor
+End Sub
+
+'=====================================================
+' Select bordercolor buttons
+'=====================================================
+Private Sub cmdBtnsBorder_Click()
+    Set ColorPic = picBtnsBorder
+    fraColorPick.Visible = True
+    Disable_EnableFrames False
+    Preview(8).ButtonsBorderColor = picBtnsBorder.BackColor
+End Sub
+
+'=====================================================
+' Button cancel colorpicker
+'=====================================================
+Private Sub cmdCancel_Click()
+    Disable_EnableFrames True
+    fraColorPick.Visible = False
+End Sub
+
+'=====================================================
+' Switch palette
+'=====================================================
+Private Sub cmdColor_Click()
+    If picGrad(0).Visible = True Then
+        picGrad(1).Visible = True
+        picGrad(0).Visible = False
+        cmdColor.Caption = "Extended colors"
+    Else
+        picGrad(1).Visible = False
+        picGrad(0).Visible = True
+        cmdColor.Caption = "Standard colors"
+    End If
+End Sub
+
+'=====================================================
+' Select backcolor for disabled bar
+'=====================================================
+Private Sub cmdDisBack_Click()
+    Set ColorPic = picDisBack
+    fraColorPick.Visible = True
+    Disable_EnableFrames False
+    Preview(9).DisabledBackColor = picDisBack.BackColor
+End Sub
+
+'=====================================================
+' Select bordercolor for disabled bar
+'=====================================================
+Private Sub cmdDisBorder_Click()
+    Set ColorPic = picDisBorder
+    fraColorPick.Visible = True
+    Disable_EnableFrames False
+    Preview(9).DisabledBorderColor = picDisBorder.BackColor
+End Sub
+
+'=====================================================
+' Set color by colorpicker
+'=====================================================
+Private Sub cmdOk_Click()
+    ColorPic.BackColor = PicColor.BackColor
+    Disable_EnableFrames True
+    fraColorPick.Visible = False
+    Changed = True
+End Sub
+
+'=====================================================
+' Set frame predifined colors
+'=====================================================
+Private Sub cmdPred_Click()
+    fraPredefined.Visible = True
+    fraPredefined.ZOrder 0
+End Sub
+
+'=====================================================
+' Select backcolor for scroller
+'=====================================================
+Private Sub cmdScrollBack_Click()
+    Set ColorPic = PicScrollBack
+    fraColorPick.Visible = True
+    Disable_EnableFrames False
+    Preview(8).ScrollerBackColor = PicScrollBack.BackColor
+End Sub
+
+'=====================================================
+' Select backcolor for scroller
+'=====================================================
+Private Sub cmdScrollBorder_Click()
+    Set ColorPic = PicScrollBorder
+    fraColorPick.Visible = True
+    Disable_EnableFrames False
+    Preview(8).ScrollerBorderColor = PicScrollBorder.BackColor
+End Sub
+
+'=====================================================
+' Select grippercolor for scroller
+'=====================================================
+Private Sub cmdScrollGrip_Click()
+    Set ColorPic = picScrollGrip
+    fraColorPick.Visible = True
+    Disable_EnableFrames False
+    Preview(8).ScrollerGripColor = picScrollGrip.BackColor
+End Sub
+
+'=====================================================
+' Apply the changes to the usercontrol
+'=====================================================
+Private Sub PropertyPage_ApplyChanges()
+    ' Bar
+    SelectedControls(0).BarBackColor = picBarBack.BackColor
+    SelectedControls(0).BarBorderColor = picBarBorder.BackColor
+    ' Disabled
+    SelectedControls(0).DisabledBackColor = picDisBack.BackColor
+    SelectedControls(0).DisabledBorderColor = picDisBorder.BackColor
+    ' Buttons
+    SelectedControls(0).ButtonsBackColor = picBtnsBack.BackColor
+    SelectedControls(0).ButtonsBorderColor = picBtnsBorder.BackColor
+    SelectedControls(0).ButtonsArrowColor = picBtnsArrow.BackColor
+    ' Scroller
+    SelectedControls(0).ScrollerBackColor = PicScrollBack.BackColor
+    SelectedControls(0).ScrollerBorderColor = PicScrollBorder.BackColor
+    SelectedControls(0).ScrollerGripColor = picScrollGrip.BackColor
+        
+    SelectedControls(0).Orientation = (cboOrientation.ListIndex)
+    SelectedControls(0).ScrollerBorderStyle = (cboScrollBorder.ListIndex)
+    SelectedControls(0).ScrollerGripperStyle = (cboGripper.ListIndex)
+    SelectedControls(0).BarBorderStyle = (cboBarBorder.ListIndex)
+    SelectedControls(0).Style = (cboBar.ListIndex)
+    SelectedControls(0).ButtonsBorderStyle = (cboBtnsBorder.ListIndex)
+    SelectedControls(0).ButtonsArrowStyle = (cbobtnsArrows.ListIndex)
+End Sub
+
+
+'================================================================
+' Set picures and comboboxes to the properties of the usercontrol
+'================================================================
+Private Sub PropertyPage_SelectionChanged()
+    ' Bar
+    picBarBack.BackColor = SelectedControls(0).BarBackColor
+    picBarBorder.BackColor = SelectedControls(0).BarBorderColor
+    ' Disabled
+    picDisBack.BackColor = SelectedControls(0).DisabledBackColor
+    picDisBorder.BackColor = SelectedControls(0).DisabledBorderColor
+    ' Buttons
+    picBtnsBack.BackColor = SelectedControls(0).ButtonsBackColor
+    picBtnsBorder.BackColor = SelectedControls(0).ButtonsBorderColor
+    picBtnsArrow.BackColor = SelectedControls(0).ButtonsArrowColor
+    ' Scroller
+    PicScrollBack.BackColor = SelectedControls(0).ScrollerBackColor
+    PicScrollBorder.BackColor = SelectedControls(0).ScrollerBorderColor
+    picScrollGrip.BackColor = SelectedControls(0).ScrollerGripColor
+    Dim i As Byte
+    Preview(8).BarBackColor = SelectedControls(0).BarBackColor
+    Preview(8).BarBorderColor = SelectedControls(0).BarBorderColor
+    Preview(8).ButtonsBackColor = SelectedControls(0).ButtonsBackColor
+    Preview(8).ButtonsBorderColor = SelectedControls(0).ButtonsBorderColor
+    Preview(8).ButtonsArrowColor = SelectedControls(0).ButtonsArrowColor
+    Preview(8).ScrollerBackColor = SelectedControls(0).ScrollerBackColor
+    Preview(8).ScrollerBorderColor = SelectedControls(0).ScrollerBorderColor
+    Preview(8).ScrollerGripColor = SelectedControls(0).ScrollerGripColor
+    Preview(8).Style = SelectedControls(0).Style
+    Preview(8).BarBorderStyle = SelectedControls(0).BarBorderStyle
+    Preview(8).ButtonsBorderStyle = SelectedControls(0).ButtonsBorderStyle
+    Preview(8).ScrollerBorderStyle = SelectedControls(0).ScrollerBorderStyle
+    Preview(8).ScrollerGripperStyle = SelectedControls(0).ScrollerGripperStyle
+    Preview(8).ButtonsArrowStyle = SelectedControls(0).ButtonsArrowStyle
+    Preview(8).Orientation = SelectedControls(0).Orientation
+    
+    Preview(9).Style = SelectedControls(0).Style
+    Preview(9).BarBorderStyle = SelectedControls(0).BarBorderStyle
+    Preview(9).ButtonsBorderStyle = SelectedControls(0).ButtonsBorderStyle
+    Preview(9).ScrollerBorderStyle = SelectedControls(0).ScrollerBorderStyle
+    Preview(9).ScrollerGripperStyle = SelectedControls(0).ScrollerGripperStyle
+    Preview(9).ButtonsArrowStyle = SelectedControls(0).ButtonsArrowStyle
+    Preview(9).Orientation = SelectedControls(0).Orientation
+    Preview(9).DisabledBackColor = SelectedControls(0).DisabledBackColor
+    Preview(9).DisabledBorderColor = SelectedControls(0).DisabledBorderColor
+    If Preview(9).Style = UserGraphics Then
+        Set Preview(8).PicButtonLeft_UP = SelectedControls(0).PicButtonLeft_UP
+        Set Preview(8).PicButtonLeft_DOWN = SelectedControls(0).PicButtonLeft_DOWN
+        Set Preview(8).PicButtonLeft_HOOVER = SelectedControls(0).PicButtonLeft_HOOVER
+        Set Preview(8).PicButtonRight_UP = SelectedControls(0).PicButtonRight_UP
+        Set Preview(8).PicButtonRight_DOWN = SelectedControls(0).PicButtonRight_DOWN
+        Set Preview(8).PicButtonRight_HOOVER = SelectedControls(0).PicButtonRight_HOOVER
+        Set Preview(8).PicButtonTop_UP = SelectedControls(0).PicButtonTop_UP
+        Set Preview(8).PicButtonTop_DOWN = SelectedControls(0).PicButtonTop_DOWN
+        Set Preview(8).PicButtonTop_HOOVER = SelectedControls(0).PicButtonTop_HOOVER
+        Set Preview(8).PicButtonBottom_UP = SelectedControls(0).PicButtonBottom_UP
+        Set Preview(8).PicButtonBottom_DOWN = SelectedControls(0).PicButtonBottom_DOWN
+        Set Preview(8).PicButtonBottom_HOOVER = SelectedControls(0).PicButtonBottom_HOOVER
+        Set Preview(8).PicBackVertical = SelectedControls(0).PicBackVertical
+        Set Preview(8).PicBackHorizontal = SelectedControls(0).PicBackHorizontal
+        Set Preview(8).PicScrollerVertical_UP = SelectedControls(0).PicScrollerVertical_UP
+        Set Preview(8).PicScrollerHorizontal_UP = SelectedControls(0).PicScrollerHorizontal_UP
+        Set Preview(8).PicScrollerVertical_DOWN = SelectedControls(0).PicScrollerVertical_DOWN
+        Set Preview(8).PicScrollerHorizontal_DOWN = SelectedControls(0).PicScrollerHorizontal_DOWN
+        Set Preview(8).PicScrollerVertical_HOOVER = SelectedControls(0).PicScrollerVertical_HOOVER
+        Set Preview(8).PicScrollerHorizontal_HOOVER = SelectedControls(0).PicScrollerHorizontal_HOOVER
+        Set Preview(9).PicBackVerticalDiasabled = SelectedControls(0).PicBackVerticalDiasabled
+        Set Preview(9).PicBackHorizontalDisabled = SelectedControls(0).PicBackHorizontalDisabled
+        Set Preview(9).PicScrollerVertical_DISABLED = SelectedControls(0).PicScrollerVertical_DISABLED
+        Set Preview(9).PicScrollerHorizontal_DISABLED = SelectedControls(0).PicScrollerHorizontal_DISABLED
+        Set Preview(9).PicButtonLeft_DISABLED = SelectedControls(0).PicButtonLeft_DISABLED
+        Set Preview(9).PicButtonRight_DISABLED = SelectedControls(0).PicButtonRight_DISABLED
+        Set Preview(9).PicButtonTop_DISABLED = SelectedControls(0).PicButtonTop_DISABLED
+        Set Preview(9).PicButtonBottom_DISABLED = SelectedControls(0).PicButtonBottom_DISABLED
+    End If
+    cboOrientation.ListIndex = SelectedControls(0).Orientation
+    cboScrollBorder.ListIndex = SelectedControls(0).ScrollerBorderStyle
+    cboGripper.ListIndex = SelectedControls(0).ScrollerGripperStyle
+    cboBarBorder.ListIndex = SelectedControls(0).BarBorderStyle
+    cboBar.ListIndex = SelectedControls(0).Style
+    cboBtnsBorder.ListIndex = SelectedControls(0).ButtonsBorderStyle
+    cbobtnsArrows.ListIndex = SelectedControls(0).ButtonsArrowStyle
+End Sub
+
+'=====================================================
+' Select barstyle
+'=====================================================
+Private Sub cboBar_Click()
+    Changed = True
+    Preview(8).Style = cboBar.ListIndex
+    Preview(9).Style = cboBar.ListIndex
+End Sub
+
+'=====================================================
+' Select borderstyle bar
+'=====================================================
+Private Sub cboBarBorder_Click()
+    Changed = True
+    Preview(8).BarBorderStyle = cboBarBorder.ListIndex
+    Preview(9).BarBorderStyle = cboBarBorder.ListIndex
+End Sub
+
+'=====================================================
+' Select orientation bar
+'=====================================================
+Private Sub cboOrientation_Click()
+    Changed = True
+    Preview(8).Orientation = cboOrientation.ListIndex
+    Preview(9).Orientation = cboOrientation.ListIndex
+End Sub
+
+'=====================================================
+' Select arrowstyle buttons
+'=====================================================
+Private Sub cbobtnsArrows_Click()
+    Changed = True
+    Preview(8).ButtonsArrowStyle = cbobtnsArrows.ListIndex
+    Preview(9).ButtonsArrowStyle = cbobtnsArrows.ListIndex
+End Sub
+
+'=====================================================
+' Select borderstyle buttons
+'=====================================================
+Private Sub cboBtnsBorder_Click()
+    Changed = True
+    Preview(8).ButtonsBorderStyle = cboBtnsBorder.ListIndex
+    Preview(9).ButtonsBorderStyle = cboBtnsBorder.ListIndex
+End Sub
+
+'=====================================================
+' Select gripperstyle scroller
+'=====================================================
+Private Sub cboGripper_Click()
+    Changed = True
+    Preview(8).ScrollerGripperStyle = cboGripper.ListIndex
+    Preview(9).ScrollerGripperStyle = cboGripper.ListIndex
+End Sub
+
+'=====================================================
+' Select borderstyle scroller
+'=====================================================
+Private Sub cboScrollBorder_Click()
+    Changed = True
+    Preview(8).ScrollerBorderStyle = cboScrollBorder.ListIndex
+    Preview(9).ScrollerBorderStyle = cboScrollBorder.ListIndex
+End Sub
+
+'=====================================================
+' Set shade and licht colors
+'=====================================================
+Private Sub PicColor_Click()
+    DrawShadeAndLight PicColor.BackColor, &H0
+End Sub
+
+'=====================================================
+' Set color under mouse to selected color
+'=====================================================
+Private Sub picGrad_MouseDown(Index As Integer, Button As Integer, Shift As Integer, x As Single, y As Single)
+    Dim Hue As Integer
+    Dim Sat As Integer
+    Dim Lum As Integer
+    On Error Resume Next
+        PicColor.BackColor = picGrad(Index).Point(x, y)
+        rgb_get PicColor.BackColor
+        RGBtoHSL txtRed.Text, txtGreen.Text, txtBlue.Text, Hue, Sat, Lum
+        txtHue.Text = Hue
+        txtSat.Text = Sat
+        txtLum.Text = Lum
+        HueScroll.Value = txtHue.Text
+        SatScroll.Value = txtSat.Text
+        LumScroll.Value = txtLum.Text
+        DrawShadeAndLight PicColor.BackColor, &H0
+        Text1.Text = PicColor.BackColor
+End Sub
+
+'=====================================================
+' Set color under mouse to selected color
+'=====================================================
+Private Sub PicLight_MouseDown(Button As Integer, Shift As Integer, x As Single, y As Single)
+    Dim Hue As Integer
+    Dim Sat As Integer
+    Dim Lum As Integer
+    On Error Resume Next
+    PicColor.BackColor = PicLight.Point(x, y)
+    ' Get RGB and HSL values for the color selected
+    rgb_get PicColor.BackColor
+    RGBtoHSL txtRed.Text, txtGreen.Text, txtBlue.Text, Hue, Sat, Lum
+    txtHue.Text = Hue
+    txtSat.Text = Sat
+    txtLum.Text = Lum
+    HueScroll.Value = txtHue.Text
+    SatScroll.Value = txtSat.Text
+    LumScroll.Value = txtLum.Text
+    Text1.Text = PicColor.BackColor
+End Sub
+
+'=====================================================
+' Set color under mouse to selected color
+'=====================================================
+Private Sub PicLight_MouseMove(Button As Integer, Shift As Integer, x As Single, y As Single)
+  On Error Resume Next
+  picMag.BackColor = PicLight.Point(x, y)
+End Sub
+
+'=====================================================
+' Set color under mouse to selected color
+'=====================================================
+Private Sub PicShade_MouseDown(Button As Integer, Shift As Integer, x As Single, y As Single)
+    ' If user clicks picShade then get and put the color clicked
+    ' into the picColor window
+    Dim Hue As Integer
+    Dim Sat As Integer
+    Dim Lum As Integer
+    On Error Resume Next
+    PicColor.BackColor = PicShade.Point(x, y)
+    
+    ' Get RGB and HSL values for the color selected
+    rgb_get PicColor.BackColor
+    RGBtoHSL txtRed.Text, txtGreen.Text, txtBlue.Text, Hue, Sat, Lum
+    txtHue.Text = Hue
+    txtSat.Text = Sat
+    txtLum.Text = Lum
+    HueScroll.Value = txtHue.Text
+    SatScroll.Value = txtSat.Text
+    LumScroll.Value = txtLum.Text
+    Text1.Text = PicColor.BackColor
+End Sub
+
+'=====================================================
+' Set color under mouse to selected color
+'=====================================================
+Private Sub PicShade_MouseMove(Button As Integer, Shift As Integer, x As Single, y As Single)
+    ' Put the color under the mouse into picMag the zoom window
+    On Error Resume Next
+    picMag.BackColor = PicShade.Point(x, y)
+End Sub
+
+'=====================================================
+' Draw shade and light colors
+'=====================================================
+Public Sub DrawShadeAndLight(StartCol As Double, EndCol As Double)
+    '   Draw the shade bar in horizontal gradient
+    Dim RedI As Single, BlueI As Single, GreenI As Single
+    Dim RedStart As Integer, GreenStart As Integer, BlueStart As Integer
+    Dim RedEnd As Double, GreenEnd As Double, BlueEnd As Double
+    Dim i As Integer
+    Dim NC As Single
+    Dim EndColor As Double, StartColor
+    Starcolor = StartCol
+    On Error Resume Next
+  
+    ' calculate down to a shade of the color
+    PicShade.Cls
+    EndColor = 0
+    StartColor = StartCol
+    RedStart = StartColor Mod 256
+    RedEnd = EndColor Mod 256
+    RedI = (RedEnd - RedStart) / PicShade.ScaleHeight
+    GreenStart = (StartColor And &HFF00FF00) / 256
+    GreenEnd = (EndColor And &HFF00FF00) / 256
+    GreenI = (GreenEnd - GreenStart) / PicShade.ScaleHeight
+    BlueStart = (StartColor And &HFFFF0000) / (65536)
+    BlueEnd = (EndColor And &HFFFF0000) / (65536)
+    BlueI = (BlueEnd - BlueStart) / PicShade.ScaleHeight
+    For i = 0 To (PicShade.ScaleHeight)
+        NC = RGB(RedStart + i * RedI, GreenStart + i * GreenI, BlueStart + i * BlueI)
+        PicShade.Line (0, i)-(PicShade.ScaleWidth, i), NC
+    Next
+    ' calculate up to a light of the color
+    PicLight.Cls
+    EndColor = StartCol
+    StartColor = 16777215
+    RedStart = StartColor Mod 256
+    RedEnd = EndColor Mod 256
+    RedI = (RedEnd - RedStart) / PicLight.ScaleHeight
+    GreenStart = (StartColor And &HFF00FF00) / 256
+    GreenEnd = (EndColor And &HFF00FF00) / 256
+    GreenI = (GreenEnd - GreenStart) / PicLight.ScaleHeight
+    BlueStart = (StartColor And &HFFFF0000) / (65536)
+    BlueEnd = (EndColor And &HFFFF0000) / (65536)
+    BlueI = (BlueEnd - BlueStart) / PicLight.ScaleHeight
+    For i = 0 To (PicLight.ScaleHeight)
+        NC = RGB(RedStart + i * RedI, GreenStart + i * GreenI, BlueStart + i * BlueI)
+        PicLight.Line (0, i)-(PicLight.ScaleWidth, i), NC
+    Next
+   
+End Sub
+
+'=====================================================
+' Convert longcolor to RGB color
+'=====================================================
+Public Sub rgb_get(ByVal CVal As Long)
+    On Error Resume Next
+    txtBlue.Text = Int(CVal / 65536)
+    txtGreen.Text = Int((CVal - (65536 * txtBlue.Text)) / 256)
+    txtRed.Text = CVal - (65536 * txtBlue.Text + 256 * txtGreen.Text)
+    RedScroll.Value = txtRed.Text
+    GreenScroll.Value = txtGreen.Text
+    BlueScroll.Value = txtBlue.Text
+End Sub
+
+'=====================================================
+' Convert RGB color to HSL color
+'=====================================================
+Public Sub RGBtoHSL(ByVal Red As Integer, ByVal Green As Integer, ByVal Blue As Integer, ByRef Hue As Integer, ByRef Saturation As Integer, ByRef Luminance As Integer)
+    ' Convert RGB to HSL
+    pRed! = Red / 255
+    pGreen! = Green / 255
+    pBlue! = Blue / 255
+    If pRed! > pGreen! Then
+       If pRed! > pBlue! Then
+          pMax! = pRed!
+       Else
+          pMax! = pBlue!
+       End If
+    ElseIf pGreen! > pBlue! Then
+        pMax! = pGreen!
+    Else
+        pMax! = pBlue!
+    End If
+    If pRed! < pGreen! Then
+        If pRed! < pBlue! Then
+            pMin! = pRed!
+        Else
+            pMin! = pBlue!
+        End If
+    ElseIf pGreen! < pBlue! Then
+        pMin! = pGreen!
+    Else
+        pMin! = pBlue!
+    End If
+    pLum! = (pMax! + pMin!) / 2
+    If pMax! = pMin! Then
+        pSat! = 0
+        pHue! = 0
+    Else
+        If pLum! < 0.5 Then
+            pSat! = (pMax! - pMin!) / (pMax! + pMin!)
+        Else
+            pSat! = (pMax! - pMin!) / (2 - pMax! - pMin!)
+        End If
+        Select Case pMax!
+            Case pRed!: pHue! = (pGreen! - pBlue!) / (pMax! - pMin!)
+            Case pGreen!: pHue! = 2 + (pBlue! - pRed!) / (pMax! - pMin!)
+            Case pBlue!: pHue! = 4 + (pRed! - pGreen!) / (pMax! - pMin!)
+        End Select
+    End If
+    Hue = pHue! * 239 \ 6
+    If Hue < 0 Then Hue = Hue + 240
+    Saturation = Int(pSat! * 239)
+    Luminance = Int(pLum! * 239)
+    
+End Sub
+
+'=====================================================
+' Convert HSL color to RGB color
+'=====================================================
+Public Sub HSLtoRGB(ByVal Hue As Integer, ByVal Saturation As Integer, ByVal Luminance As Integer, ByRef Red As Integer, ByRef Green As Integer, ByRef Blue As Integer)
+    ' Convert HSL to RGB
+   ReDim temp3!(0 To 2)
+   pHue! = Hue / 239
+   pSat! = Saturation / 239
+   pLum! = Luminance / 239
+   If pSat! = 0 Then
+      pRed! = pLum!
+      pGreen! = pLum!
+      pBlue! = pLum!
+   Else
+      If pLum! < 0.5 Then
+         temp2! = pLum! * (1 + pSat!)
+      Else
+         temp2! = pLum! + pSat! - pLum! * pSat!
+      End If
+      temp1! = 2 * pLum! - temp2!
+      temp3!(0) = pHue! + 1 / 3
+      temp3!(1) = pHue!
+      temp3!(2) = pHue! - 1 / 3
+      For n% = 0 To 2
+         If temp3!(n%) < 0 Then temp3!(n%) = temp3!(n%) + 1
+         If temp3!(n%) > 1 Then temp3!(n%) = temp3!(n%) - 1
+         If 6 * temp3!(n%) < 1 Then
+            temp3!(n%) = temp1! + (temp2! - temp1!) * 6 * temp3!(n%)
+         Else
+            If 2 * temp3!(n%) < 1 Then
+               temp3!(n%) = temp2!
+            Else
+               If 3 * temp3!(n%) < 2 Then
+                  temp3!(n%) = temp1! + (temp2! - temp1!) * ((2 / 3) - temp3!(n%)) * 6
+               Else
+                  temp3!(n%) = temp1!
+                End If
+             End If
+          End If
+       Next n%
+       pRed! = temp3!(0)
+       pGreen! = temp3!(1)
+       pBlue! = temp3!(2)
+    End If
+    Red = Int(pRed! * 255)
+    Green = Int(pGreen! * 255)
+    Blue = Int(pBlue! * 255)
+End Sub
+
+'=====================================================
+' Change saturation by scrollervalue
+'=====================================================
+Private Sub SatScroll_Change()
+    ' Change saturation value
+    Dim xRed As Integer
+    Dim xGreen As Integer
+    Dim xBlue As Integer
+    txtSat.Text = SatScroll.Value
+    ' call the HSL to RGB sub
+    HSLtoRGB txtHue.Text, txtSat.Text, txtLum.Text, xRed, xGreen, xBlue
+    'Checking to eliminate errors
+    If xRed < 1 Then xRed = 1
+    If xGreen < 1 Then xGreen = 1
+    If xBlue < 1 Then xBlue = 1
+    If xRed > 255 Then xRed = 255
+    If xGreen > 255 Then xGreen = 255
+    If xBlue > 255 Then xBlue = 255
+    ' Put new color in picColor
+    PicColor.BackColor = RGB(xRed, xGreen, xBlue)
+End Sub
+
